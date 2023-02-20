@@ -1,0 +1,60 @@
+/* EQUIPMENT */
+.equipment {
+   border-bottom: 1px solid $borderColor;
+   // .equipment__container
+   &__container {
+   }
+   // .equipment__body
+   &__body {
+      display: flex;
+      margin: 0 -10px;
+      flex-wrap: wrap;
+   }
+   // .equipment__item
+   &__item {
+      flex: 0 0 33.333%;
+      padding: 0 10px;
+      display: flex;
+      margin-bottom: rem(40);
+   }
+   // .equipment__image
+   &__image {
+      margin-right: rem(25);
+   }
+   // .equipment__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+   }
+   // .equipment__title
+   &__title {
+   }
+   // .equipment__menu
+   &__menu {
+      flex: 1 1 auto;
+   }
+}
+.menu-equipment {
+   // .menu-equipment__body
+   &__body {
+   }
+   // .menu-equipment__list
+   &__list {
+   }
+   // .menu-equipment__item
+   &__item {
+   }
+   // .menu-equipment__link
+   &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+}

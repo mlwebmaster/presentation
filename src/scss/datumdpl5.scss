@@ -1,0 +1,190 @@
+/* DATUM DPL5 */
+.datumdpl5 {
+   padding-top: rem(40);
+   // .datumdpl5__container
+   &__container {
+   }
+   // .datumdpl5__body
+   &__body {
+      display: flex;
+      padding-top: rem(40);
+      margin-bottom: rem(100);
+   }
+   // .datumdpl5__block-image
+   &__block-image {
+   }
+   // .datumdpl5__image
+   &__image {
+      position: relative;
+      margin-right: rem(41);
+      margin-bottom: rem(20);
+      &::before {
+         content: "";
+         position: absolute;
+         background: url('@img/datumdpl5/arrow-prev-dpl5.svg');
+         width: rem(40);
+         height: rem(40);
+         top: rem(205);
+         left: rem(25);
+         cursor: pointer;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         background: url('@img/datumdpl5/arrow-next-dpl5.svg');
+         width: rem(40);
+         height: rem(40);
+         top: rem(205);
+         right: rem(25);
+         cursor: pointer;
+      }
+   }
+   // .datumdpl5__image-mini
+   &__image-mini {
+      display: flex;
+      gap: rem(10);
+   }
+   // .datumdpl5__image-mini-1
+   &__image-mini-1 {
+   }
+   // .datumdpl5__image-mini-2
+   &__image-mini-2 {
+   }
+   // .datumdpl5__image-mini-3
+   &__image-mini-3 {
+   }
+   // .datumdpl5__content
+   &__content {
+   }
+   // .datumdpl5__text
+   &__text {
+      margin-bottom: rem(36);
+   }
+}
+.content-datumdpl5 {
+   // .content-datumdpl5__data
+   &__data {
+      display: flex;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: 0.0075em;
+      gap: rem(18);
+   }
+   // .content-datumdpl5__data-art
+   &__data-art {
+   }
+   // .content-datumdpl5__data-cod
+   &__data-cod {
+   }
+   // .content-datumdpl5__title
+   &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 122%;
+      color: $blackColor;
+      margin-bottom: rem(10);
+   }
+   // .content-datumdpl5__button
+   &__button {
+      display: flex;
+      background: $orangeColor;
+      gap: rem(15);
+      padding: 8px 21px 8px 6px;
+      border-radius: 5px;
+      color: $whiteColor;
+      margin-right: rem(7);
+   }
+   // .content-datumdpl5__button-minus
+   &__button-minus {
+
+   }
+   // .content-datumdpl5__button-plus
+   &__button-plus {
+
+   }
+   // .content-datumdpl5__button-img
+   &__button-img {
+   }
+   // .content-datumdpl5__button-text
+   &__button-text {
+   }
+   // .content-datumdpl5__heart
+   &__heart {
+      border: 1px solid $orangeColor;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: rem(9);
+   }
+   // .content-datumdpl5__price
+   &__price {
+      display: flex;
+      align-items: center;
+      gap: rem(20);
+      margin-bottom: rem(20);
+   }
+   // .content-datumdpl5__value
+   &__value {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      color: $dark2GrayColor;
+   }
+   // .content-datumdpl5__amount
+   &__amount {
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 100%;
+      color: $blackColor;
+      letter-spacing: 0.05em;
+      text-transform: uppercase; 
+   }
+   // .content-datumdpl5__thing
+   &__thing {
+      background: $lightLightGrayColor;
+      padding: rem(4) rem(19);
+      border-radius: 5px;
+   }
+   // .content-datumdpl5__buy-button-wrapper
+   &__buy-button-wrapper {
+      margin-bottom: rem(26);
+   }
+   // .content-datumdpl5__buy-button-image
+   &__buy-button-image {
+   }
+   // .content-datumdpl5__buy-button-text
+   &__buy-button-text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 121%;
+      color: $whiteColor;
+   }
+   // .content-datumdpl5__button-buy
+   &__button-buy {
+      padding: rem(16) rem(53);
+      display: flex;
+      gap:rem(11);
+   }
+   // .content-datumdpl5__bank-card
+   &__bank-card {
+   }
+}
+.button-wrapper {
+   display: flex;
+   align-items: center;
+   margin-bottom: rem(25);
+}
+.text {
+}
+.button {
+}

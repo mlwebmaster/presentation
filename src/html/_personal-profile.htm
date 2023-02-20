@@ -1,0 +1,126 @@
+<!-- PERSONAL-PROFILE -->
+<section class="page__profile profile">
+   <div class="profile__container">
+      <div class="profile__body">
+         <aside class="profile__side side-profile">
+            <div class="side-profile__title">My Account</div>
+            <div class="side-profile__menu menu-side-profile">
+               <nav class="menu-side-profile__body">
+                  <ul class="menu-side-profile__list">
+                     <li class="menu-side-profile__item">
+                        <div class="menu-side-profile__image">
+                           <img src="@img/personal-profile/icon-1.png" alt="Icon">
+                        </div>
+                        <a href="#!" class="menu-side-profile__link menu-side-profile__link-current">Account Information</a>
+                     </li>
+                     <li class="menu-side-profile__item">
+                        <div class="menu-side-profile__image">
+                           <img src="@img/personal-profile/icon-2.png" alt="Icon">
+                        </div>
+                        <a href="#!" class="menu-side-profile__link">Order History</a>
+                     </li>
+                     <li class="menu-side-profile__item">
+                        <div class="menu-side-profile__image">
+                           <img src="@img/personal-profile/icon-3.png" alt="Icon">
+                        </div>
+                        <a href="#!" class="menu-side-profile__link">Address Book</a>
+                     </li>
+                     <li class="menu-side-profile__item">
+                        <div class="menu-side-profile__image">
+                           <img src="@img/personal-profile/icon-4.png" alt="Icon">
+                        </div>
+                        <a href="#!" class="menu-side-profile__link">Payment Methods</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </aside>
+         <div class="profile__content">
+            <h2 class="profile__title">Personal Profile</h2>
+            <div class="profile__data data-profile">
+               <div class="data-profile__customer customer-data">
+                  <div class="customer-data__image">
+                     <img src="@img/personal-profile/avatar.png" alt="Avatar">
+                  </div>
+                  <div class="customer-data__text">customer since</div>
+                  <div class="customer-data__date">February 17, 2023</div>
+               </div>
+               <div class="data-profile__form form-data-profile">
+                  <form action="#!" id="form-data-profile" class="form-data-profile__body">
+                     <div class="form-data-profile__item item-data-firstname">
+                        <label for="formFirstName" class="form-data-profile__label">First Name</label>
+                        <input id="formFirstName" type="text" name="firstname" class="form-data-profile__input">
+                     </div>
+                     <div class="form-data-profile__item item-data-lastname">
+                        <label for="formLastName" class="form-data-profile__label">Last Name</label>
+                        <input id="formLastName" type="text" name="lastname" class="form-data-profile__input">
+                     </div>
+                     <div class="form-data-profile__item item-data-email">
+                        <label for="formEmail" class="form-data-profile__label">Email Address</label>
+                        <input id="formEmail" type="text" name="email" class="form-data-profile__input">
+                     </div>
+                     <div class="form-data-profile__item item-data-phone">
+                        <label for="formPhone" class="form-data-profile__label">Phone Number</label>
+                        <input id="formPhone" type="text" name="phone" class="form-data-profile__input">
+                        <div class="form-data-profile__sign">Optional</div>
+                     </div>
+                     <div class="form-data-profile__item item-data-gender">
+                        <div class="form-data-profile__title">Gender</div>
+                        <select name="gender" class="form-data-profile__select">
+                           <option value="prefer">Prefer not to say</option>
+                           <option value="male">Male</option>
+                           <option value="female">Female</option>
+                        </select>
+                        <div class="form-data-profile__sign">Optional</div> 
+                     </div>
+                     <div class="form-data-profile__warning">
+                        <div class="form-data-profile__warning-image">
+                           <img src="@img/personal-profile/icon-5.png" alt="Icon">
+                        </div>
+                        <div class="form-data-profile__warning-text">We  use this informaition for analysis and will never share it with others</div>
+                     </div>
+                     <div class="form-data-profile__button-wrapper">
+                        <button type="submit" class="form-data-profile__button">Update profile</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <h2 class="profile__title">Password</h2>
+            <div class="profile__password password-profile">
+               <div class="password-profile__form form-password-profile">
+                  <form action="#!" id="form-password-profile-2" class="form-password-profile__body">
+                     <div class="form-password-profile__item">
+                        <label for="formCurrentPas" class="form-password-profile__label">Enter Current Password</label>
+                        <input id="formCurrentPas" type="text" name="currentPas" class="form-password-profile__input">
+                        <button type="submit" class="form-password-profile__button">
+                           <div class="form-password-profile__show-icon">
+                              <img src="@img/personal-profile/icon-6.png" alt="Icon">
+                           </div>
+                           <div class="form-password-profile__show-text">Show password</div>
+                        </button>
+                     </div>
+                     <div class="form-password-profile__item">
+                        <label for="formNewPas" class="form-password-profile__label">Enter New Password</label>
+                        <input id="formNewPas" type="text" name="newPas" class="form-password-profile__input">
+                        <button type="submit" class="form-password-profile__button">
+                           <div class="form-password-profile__show-icon">
+                              <img src="@img/personal-profile/icon-6.png" alt="Icon">
+                           </div>
+                           <div class="form-password-profile__show-text">Show password</div>
+                        </button>
+                     </div>
+                     <div class="form-password-profile__condition condition">
+                        <div class="condition__title">Your password:</div>
+                        <div class="condition__text">
+                           <p>must be at least 6 characters</p>
+                           <p>should contain one upper case letter [A-Z] and one numeric character [0-9]</p>
+                        </div>
+                     </div>
+                     <button type="submit" class="form-password-profile__button-2">Update password</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>      
+   </div>
+</section>

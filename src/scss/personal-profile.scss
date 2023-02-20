@@ -1,0 +1,297 @@
+/* PERSONAL-PROFILE */
+.profile {
+   background: $whiteColor;
+   // .profile__container
+   &__container {
+   }
+   // .profile__body
+   &__body {
+      display: flex;
+   }
+   // .profile__side
+   &__side {
+   }
+   // .profile__content
+   &__content {
+      border: 1px solid $lightLightGrayColor;
+      padding: rem(30);
+   }
+   // .profile__title
+   &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 120%;
+      letter-spacing: -1px;
+      margin-bottom: rem(25);
+   }
+   // .profile__data
+   &__data {
+   }
+   // .profile__password
+   &__password {
+   }
+}
+.side-profile {
+   margin-right: rem(27);
+   // .side-profile__title
+   &__title {
+      border-left:  1px solid $lightLightGrayColor;
+      border-top:  1px solid $lightLightGrayColor;
+      border-right: 1px solid $lightLightGrayColor;
+      padding: rem(15);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -1px;
+   }
+   // .side-profile__menu
+   &__menu {
+   }
+}
+.menu-side-profile {
+   border: 1px solid $lightLightGrayColor;
+   // .menu-side-profile__body
+   &__body {
+   }
+   // .menu-side-profile__list
+   &__list {
+   }
+   // .menu-side-profile__item
+   &__item {
+      display: flex;
+      align-items: center;
+      padding: rem(10);
+      &:not(:last-child) {
+         border-bottom: 1px solid $lightLightGrayColor;
+      }
+   }
+   // .menu-side-profile__image
+   &__image {
+      margin-right: rem(7);
+   }
+   // .menu-side-profile__link
+   &__link {
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: $blackColor;
+      letter-spacing: -1px;
+   }
+   &__link-current {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      color: $blackColor;
+      letter-spacing: -1px;
+   }
+}
+.data-profile {
+   border: 1px solid $lightLightGrayColor;
+   padding: rem(40);
+   display: flex;
+   // .data-profile__customer
+   &__customer {
+   }
+   // .data-profile__form
+   &__form {
+   }
+}
+.customer-data {
+   border-right: 1px solid $lightLightGrayColor;
+   padding: 0 rem(50) 0 rem(30);
+   height: rem(180);
+   flex: 0 0 250px;
+   // .customer-data__image
+   &__image {
+      text-align: center;
+      margin-bottom: rem(10);
+   }
+   // .customer-data__text
+   &__text {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -1px;
+      margin-bottom: rem(8);
+   }
+   // .customer-data__date
+   &__date {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: $blackColor;
+      letter-spacing: -1px;
+   }
+}
+.form-data-profile {
+   padding: 0 rem(30);
+   // .form-data-profile__body
+   &__body {
+   }
+   // .form-data-profile__item
+   &__item {
+      ._form-focus {
+         background: $bgColor;
+      }
+   }
+   // .form-data-profile__label
+   &__label {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+      //letter-spacing: -1px;
+   }
+   // .form-data-profile__input
+   &__input {
+      outline: none;
+      border: 1px solid $lightLightGrayColor;
+      border-radius: 4px;
+      padding: 10px;
+      width: 320px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+   }
+   // .form-data-profile__sign
+   &__sign {
+   }
+   // .form-data-profile__title
+   &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+   }
+   // .form-data-profile__select
+   &__select {
+      width: 100%;
+   }
+   // .form-data-profile__warning
+   &__warning {
+      display: flex;
+      padding-left: rem(150);
+      margin-bottom: rem(20);
+   }
+   // .form-data-profile__warning-image
+   &__warning-image {
+      margin-right: rem(8);
+   }
+   // .form-data-profile__warning-text
+   &__warning-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+   }
+   &__button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+   }
+   // .form-data-profile__button
+   &__button {      
+      background: $grayColor;
+      color: $whiteColor;
+      padding: rem(15) rem(35);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $dark2GrayColor;
+         }
+      }
+   }
+}
+.item-data-firstname {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: rem(20);
+}
+.item-data-lastname {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: rem(20);
+}
+.item-data-email {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: rem(20);
+}
+.item-data-phone {
+   display: flex;
+   align-items: center;
+   //justify-content: space-between;
+   margin-bottom: rem(20);   
+}
+.item-data-gender {
+   display: flex;
+   align-items: center;
+   margin-bottom: rem(10);
+}
+input[name = "phone"] {
+   width: 200px;
+   margin: 0 rem(43);
+}
+.select {
+   width: 200px;
+   margin: 0 rem(45) 0 rem(100);
+}
+.password-profile {
+   // .password-profile__form
+   &__form {
+   }
+}
+.form-password-profile {
+   // .form-password-profile__body
+   &__body {
+   }
+   // .form-password-profile__item
+   &__item {
+   }
+   // .form-password-profile__label
+   &__label {
+   }
+   // .form-password-profile__input
+   &__input {
+   }
+   // .form-password-profile__button
+   &__button {
+   }
+   // .form-password-profile__show-icon
+   &__show-icon {
+   }
+   // .form-password-profile__show-text
+   &__show-text {
+   }
+   // .form-password-profile__condition
+   &__condition {
+   }
+   // .form-password-profile__button-2
+   &__button-2 {
+   }
+}
+.condition {
+   // .condition__title
+   &__title {
+   }
+   // .condition__text
+   &__text {
+   }
+}

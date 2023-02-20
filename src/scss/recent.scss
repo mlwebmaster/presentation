@@ -1,0 +1,113 @@
+/* RESENT */
+.recent {
+   padding-bottom: rem(80);
+   // .recent__container
+   &__container {
+      background: $whiteColor;
+      padding-top: rem(14);
+      padding-bottom: rem(34);
+      box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(3px);
+   }
+   // .recent__body
+   &__body {
+   }
+   // .recent__header
+   &__header {
+   }
+   // .recent__lable
+   &__lable {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: $whiteColor;
+      background: $orangeColor;
+      padding: rem(17) rem(43);
+      margin-bottom: rem(36);
+   }
+   // .recent__cards
+   &__cards {
+   }
+}
+.cards-recent {
+   display: flex;
+   margin: 0 -17px;
+   flex-wrap: wrap;
+   // .cards-recent__item
+   &__item {
+      padding: 0 17px;
+      display: flex;
+      flex-direction: column;
+   }
+   // .cards-recent__image
+   &__image {
+      margin-bottom: rem(11);
+   }
+   // .cards-recent__desc
+   &__desc {
+      flex: 1 1 auto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: $lightGrayColor;
+      max-width: rem(183);
+      margin-bottom: rem(14);
+   }
+   // .cards-recent__price
+   &__price {
+   }
+   // .cards-recent__add-button
+   &__add-button {
+   }
+   // .cards-recent__add-text
+   &__add-text {
+   }
+}
+.price-recent {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: rem(21);
+   // .price-recent__value
+   &__value {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+      color: $orangeColor;
+   }
+   // .price-recent__amount
+   &__amount {
+      display: flex;
+      align-items: center;
+      gap: rem(6.5);
+   }
+   // .price-recent__button
+   &__button {
+      background-color: $lightGrayColor;
+      color: $whiteColor;
+      width: rem(16);
+      height: rem(16);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   // .price-recent__thing
+   &__thing {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 9.43412px;
+      line-height: 100%;
+      color: $lightGrayColor;
+   }
+}
+// ._minus
+._minus {
+}
+// ._plus
+._plus {
+}
+
+

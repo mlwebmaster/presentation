@@ -1,0 +1,301 @@
+/* CONTACTUS */
+.contactus {
+   // .contactus__container
+   &__container {
+      padding-bottom: rem(80);
+   }
+   // .contactus__header
+   &__header {
+      padding: rem(40) 0;
+   }
+   // .contactus__title
+   &__title {
+   }
+   // .contactus__breadcrumbs
+   &__breadcrumbs {
+   }
+   // .contactus__body
+   &__body {
+      display: flex;
+   }
+   // .contactus__content
+   &__content {
+      flex: 1 1 auto;
+      padding-right: rem(100);
+   }
+   // .contactus__text
+   &__text {
+      margin-bottom: rem(46);
+   }
+   // .contactus__phone
+   &__phone {
+      margin-bottom: rem(20);
+   }
+   // .contactus__phone-lable
+   &__phone-lable {
+   }
+   // .contactus__phone-text
+   &__phone-text {
+   }
+   // .contactus__person
+   &__person {
+      margin-bottom: rem(20);
+   }
+   // .contactus__person-lable
+   &__person-lable {
+   }
+   // .contactus__person-text
+   &__person-text {
+   }
+   // .contactus__mobile
+   &__mobile {
+      margin-bottom: rem(20);
+   }
+   // .contactus__mobile-label
+   &__mobile-label {
+   }
+   // .contactus__mobile-text
+   &__mobile-text {
+   }
+   // .contactus__email
+   &__email {
+      margin-bottom: rem(53);
+   }
+   // .contactus__email-label
+   &__email-label {
+   }
+   // .contactus__email-text
+   &__email-text {
+   }
+   // .contactus__info
+   &__info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      color: $grayColor;
+      margin-bottom: rem(20);
+   }
+   // .contactus__info-1
+   &__info-1 {
+   }
+   // .contactus__info-2
+   &__info-2 {
+   }
+   // .contactus__info-3
+   &__info-3 {
+   }
+   // .contactus__info-4
+   &__info-4 {
+   }
+   // .contactus__company
+   &__company {
+      margin-bottom: rem(5);
+   }
+   // .contactus__company-label
+   &__company-label {
+   }
+   // .contactus__company-text
+   &__company-text {
+   }
+   // .contactus__vat
+   &__vat {
+      margin-bottom: rem(47);
+   }
+   // .contactus__vat-label
+   &__vat-label {
+   }
+   // .contactus__vat-text
+   &__vat-text {
+   }
+   // .contactus__social
+   &__social {
+   }
+   // .contactus__social-linkedin
+   &__social-linkedin {
+      margin-right: rem(20);
+   }
+   // .contactus__social-facebook
+   &__social-facebook {
+      margin-right: rem(20);
+   }
+   // .contactus__social-twitter
+   &__social-twitter {
+   }
+   // .contactus__form
+   &__form {
+   }
+}
+.lable-contactus {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 100%;
+   color: $grayColor;
+}
+.text-contactus {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 100%;
+   color: $grayColor;
+}
+.form-contactus {
+   flex: 0 0 570px;
+   background: $blueColor;
+   padding: 36px 55px 20px 45px;
+   color: $whiteColor;
+   // .form-contactus__body
+   &__body {
+   }
+   // .form-contactus__title
+   &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 122%;
+      margin-bottom: rem(26);
+   }
+   // .form-contactus__item
+   &__item {
+      margin-bottom: rem(10);
+   }
+   // .form-contactus__name
+   &__name {      
+   }
+   // .form-contactus__email
+   &__email {
+   }
+   // .form-contactus__required
+   &__required {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 122%;
+      text-align: right;
+      margin-bottom: rem(18);
+   }
+   // .form-contactus__phone
+   &__phone {
+   }
+   // .form-contactus__subject
+   &__subject {
+   }
+   // .form-contactus__message
+   &__message {
+      resize: vertical;
+   }
+   // .form-contactus__button
+   &__button {
+      background: $whiteColor;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 121%;
+      text-align: center;
+      text-transform: uppercase;
+      color: $blueColor;
+      width: 100%;
+      padding: rem(18);
+      border-radius: 4px;
+      transition: color 0.3s ease 0s;
+      margin-bottom: rem(18);
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+   // .form-contactus__text
+   &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 121%;
+      text-align: center;
+   }
+}
+.item-name {
+   position: relative;
+   &::before {
+      content: "";
+      background: url('@img/contactus/person.svg') no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(0px, -50%);
+      width: 20px;
+      height: 20px;
+   }
+}
+.item-email {
+   position: relative;
+   &::before {
+      content: "";
+      background: url('@img/contactus/envelope.svg') no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(0px, -50%);
+      width: 20px;
+      height: 20px;
+   }
+}
+.item-phone {
+   position: relative;
+   &::before {
+      content: "";
+      background: url('@img/contactus/telephone.svg') no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(0px, -50%);
+      width: 20px;
+      height: 20px;
+   }
+}
+.item-subject {
+   position: relative;
+   &::before {
+      content: "";
+      background: url('@img/contactus/new.svg') no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(0px, -50%);
+      width: 20px;
+      height: 20px;
+   }
+
+}
+.item-message {
+   position: relative;
+   &::before {
+      content: "";
+      background: url('@img/contactus/new.svg') no-repeat;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      //transform: translate(0px, -50%);
+      width: 20px;
+      height: 20px;
+   }
+
+}
+.input-form {
+   outline: none;
+   height: rem(65);
+   padding: rem(20) rem(20) rem(20) rem(40);
+   width: 100%;
+   border: 1px solid $whiteColor;
+   border-radius: 4px;
+   background: $blueColor;
+   caret-color: $whiteColor;
+   color: $whiteColor;
+}
+.input-form::placeholder {
+   color: $whiteColor;
+}
+._form-focus {
+   background: $inputColor;
+}

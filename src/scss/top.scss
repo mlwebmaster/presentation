@@ -1,0 +1,164 @@
+/* TOP */
+.top {
+   padding-bottom: rem(80);
+   // .top_body
+   &_body {
+   }
+   // .top__container
+   &__container {
+      background: $whiteColor;
+      padding-top: rem(14);
+      padding-bottom: rem(34);
+      box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(3px);
+   }
+   // .top__cards
+   &__cards {
+   }
+   // .top__main
+   &__main {
+   }
+}
+.main-top {
+   display: flex;
+   align-items: center;
+   margin-bottom: rem(36);
+   // .main-top__lable
+   &__lable {
+      display: flex;
+      padding: rem(17) rem(40);
+      background: $orangeColor;
+   }
+   // .main-top__lable-icon
+   &__lable-icon {
+      margin-right: rem(13);
+   }
+   // .main-top__lable-text
+   &__lable-text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: $whiteColor;
+   }
+   // .main-top__menu
+   &__menu {
+   }
+}
+.menu-main-top {
+   // .menu-main-top__body
+   &__body {
+   }
+   // .menu-main-top__list
+   &__list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+   // .menu-main-top__item
+   &__item {
+      margin-left: rem(35);
+   }
+   // .menu-main-top__link
+   &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: $lightGrayColor;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $darkGrayColor;
+            text-decoration-line: underline;
+            text-underline-offset: 20px;
+            text-decoration-thickness: 6px;
+            text-decoration-color: $orangeColor;
+         }
+      }
+   }
+}
+.cards-top {
+   display: flex;
+   //justify-content: space-between;
+   margin: 0 -17px;
+   flex-wrap: wrap;
+   // .cards-top__item
+   &__item {
+      padding: 0 17px;
+      display: flex;
+      flex-direction: column;
+   }
+   // .cards-top__image
+   &__image {
+      margin-bottom: rem(11);
+   }
+   // .cards-top__desc
+   &__desc {
+      flex: 1 1 auto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: $lightGrayColor;
+      max-width: rem(183);
+      margin-bottom: rem(14);
+   }
+   // .cards-top__price
+   &__price {
+   }
+   // .cards-top__add-button
+   &__add-button {
+   }
+   // .cards-top__add-text
+   &__add-text {
+   }
+}
+.price-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: rem(21);
+   // .price-top__value
+   &__value {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+      color: $orangeColor;
+   }
+   // .price-top__amount
+   &__amount {
+      display: flex;
+      align-items: center;
+      gap: rem(6.5);
+   }
+   // .price-top__button
+   &__button {
+      background-color: $lightGrayColor;
+      color: $whiteColor;
+      width: rem(16);
+      height: rem(16);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+   }
+   // .price-top__thing
+   &__thing {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 9.43412px;
+      line-height: 100%;
+      color: $lightGrayColor;
+   }
+}
+// ._minus
+._minus {
+}
+// ._plus
+._plus {
+}
+
+
+

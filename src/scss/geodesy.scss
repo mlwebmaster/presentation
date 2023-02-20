@@ -1,0 +1,248 @@
+/* GEODESY */
+.geodesy {
+   padding-top: rem(40);
+   // .geodesy__header
+   &__header {
+   }
+   // .geodesy__title
+   &__title {
+      color: $blueColor;
+   }
+   // .geodesy__breadcrumbs
+   &__breadcrumbs {
+      
+   }
+   // .geodesy__container
+   &__container {
+   }
+   // .geodesy__body
+   &__body {
+      display: flex;
+      padding-top: rem(32);
+   }
+   // .geodesy__side
+   &__side {
+      flex: 0 0 253px;
+      padding-right: rem(50);
+   }
+   // .geodesy__menu
+   &__menu {
+   }
+   // .geodesy__price
+   &__price {
+   }
+   // .geodesy__brand
+   &__brand {
+   }
+   // .geodesy__country
+   &__country {
+   }
+   // .geodesy__filter
+   &__filter {
+   }
+   // .geodesy__content
+   &__content {
+      flex: 1 1 auto;
+      padding-left: rem(21);
+      padding-right: rem(21);
+   }
+   // .geodesy__equipment
+   &__equipment {
+   }
+}
+.menu-geodesy {
+   // .menu-geodesy__title
+   &__title {
+      
+   }
+   // .menu-geodesy__body
+   &__body {
+   }
+   // .menu-geodesy__list
+   &__list {
+   }
+   // .menu-geodesy__item
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .menu-geodesy__link
+   &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.0075em;
+      color: $blackColor;
+   }
+   // .menu-geodesy__button
+   &__button {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.submenu-geodesy {
+   // .submenu-geodesy__list
+   &__list {
+   }
+   // .submenu-geodesy__item
+   &__item {
+      padding-left: rem(10);
+   }
+   // .submenu-geodesy__link
+   &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 184%;
+      color: $blackColor;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+}
+.price-geodesy {
+   // .price-geodesy__spollers
+   &__spollers {
+   }
+   // .price-geodesy__item
+   &__item {
+   }
+   // .price-geodesy__title
+   &__title {
+   }
+   // .price-geodesy__body
+   &__body {
+   }
+}
+.spollers {
+   // .spollers__item
+   &__item {
+   }
+   // .spollers__body
+   &__body {
+   }
+}
+.brand-geodesy {
+   // .brand-geodesy__spollers
+   &__spollers {
+   }
+   // .brand-geodesy__item
+   &__item {
+   }
+   // .brand-geodesy__title
+   &__title {
+   }
+   // .brand-geodesy__body
+   &__body {
+   }
+}
+.country-geodesy {
+   // .country-geodesy__spollers
+   &__spollers {
+   }
+   // .country-geodesy__item
+   &__item {
+   }
+   // .country-geodesy__title
+   &__title {
+   }
+   // .country-geodesy__body
+   &__body {
+   }
+}
+.filter-geodesy {
+   display: flex;
+   align-items: center;
+   gap: rem(20);
+   // .filter-geodesy__price
+   &__price {
+   }
+   // .filter-geodesy__price-text
+   &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: $blackColor;
+      background: $filterBgColor;
+      padding: rem(7) rem(22);
+   }
+   // .filter-geodesy__image
+   &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: rem(10);
+   }
+   // .filter-geodesy__brand
+   &__brand {
+   }
+   // .filter-geodesy__country
+   &__country {
+   }
+   // .filter-geodesy__item
+   &-item {
+      display: flex;
+      align-items: center;
+   }
+}
+.equipment-geodesy {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: rem(16);
+   padding-bottom: rem(73);
+   margin: 0 rem(-10);
+   // .equipment-geodesy__item
+   &__item {
+      flex: 1 1 25%;
+      margin-bottom: rem(30);
+      display: flex;
+      flex-direction: column;
+      padding: 0 rem(10);
+   }
+   // .equipment-geodesy__image
+   &__image {
+      margin-bottom: rem(19);
+   }
+   // .equipment-geodesy__title
+   &__title {
+      margin-bottom: rem(47);
+      flex: 1 1 auto;
+   }
+   // .equipment-geodesy__menu
+   &__menu {
+   }
+}
+.menu-equipment-geodesy {
+   // .menu-equipment-geodesy__body
+   &__body {
+   }
+   // .menu-equipment-geodesy__list
+   &__list {
+   }
+   // .menu-equipment-geodesy__item
+   &__item {
+   }
+   // .menu-equipment-geodesy__link
+   &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+}
+
+
+

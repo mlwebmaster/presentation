@@ -1,0 +1,115 @@
+/* SEARCH */
+.search {
+   padding: 30px 0 40px 0;
+   border-bottom: 1px solid $borderColor;
+   // .search__container
+   &__container {
+   }
+   // .search__body
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .search__main
+   &__main {
+      margin-right: rem(50);
+   }
+   // .search__tagline
+   &__tagline {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 91.9%;
+      text-transform: uppercase;
+      color: $orangeColor;
+      span {
+         color: $blueColor;
+      }
+   }
+   // .search__desc
+   &__desc {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 121%;
+      color: $blueColor;
+   }
+   // .search__form
+   &__form {
+   }
+   // .search__cart
+   &__cart {
+   }
+}
+.form-search {
+   flex: 1 1 auto;
+   display: flex;
+   align-items: center;
+   // .form-search__item
+   &__item {
+      width: 520px;
+      height: 40px;
+      //background: $bgColor;
+      border: 1px solid #CECECE;
+      border-radius: 4px;
+      padding: 12px;
+      margin-right: rem(6);
+      img {
+         margin-right: rem(11);
+      }
+   }
+   // .form-search__input
+   &__input {
+      background: $bgColor;
+      outline: none;
+      width: rem(460);
+   }
+   // .form-search__button
+   &__button {
+      padding: 11px 42px;
+      background: $blueColor;
+      color: $whiteColor;
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
+}
+.cart-search {
+   display: flex;
+   align-items: center;
+   padding-right: rem(70);
+   // .cart-search__text
+   &__text {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 135%;
+      color: $blueColor;
+      margin-right: rem(10);
+   }
+   // .cart-search__image
+   &__image {
+      position: relative;
+      span {
+         position: absolute;
+         background: $orangeColor;
+         border-radius: 50%;
+         padding: rem(5);
+         color: $whiteColor;
+         top: -10px;
+         right: -7px;
+         display: flex;
+         width: 20px;
+         height: 20px;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}
