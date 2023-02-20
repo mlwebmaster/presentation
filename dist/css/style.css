@@ -2835,6 +2835,7 @@ textarea.input {
 .profile__content {
   border: 1px solid #C4C4C4;
   padding: 1.875rem;
+  margin-bottom: 2.5rem;
 }
 
 .profile__title {
@@ -2909,6 +2910,7 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2.5rem;
 }
 
 .customer-data {
@@ -3089,9 +3091,120 @@ input[name=phone] {
   margin: 0 2.6875rem;
 }
 
+input[name=newpas] {
+  margin-left: 1.625rem;
+}
+
 .select {
   width: 200px;
   margin: 0 2.8125rem 0 6.25rem;
+}
+
+.password-profile {
+  border: 1px solid #C4C4C4;
+  padding: 2.5rem 3.75rem;
+}
+
+.form-password-profile__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-password-profile__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.form-password-profile__input {
+  outline: none;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.form-password-profile__button-2 {
+  /* display: flex;
+  align-items: center; */
+  background: #5B5B5B;
+  color: #ffffff;
+  padding: 0.9375rem 2.1875rem;
+  border-radius: 4px;
+  -webkit-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s;
+}
+
+.form-password-profile__button-2-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-password-profile__show-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.condition {
+  background: #F2F2F2;
+  padding: 0.4375rem;
+  margin-bottom: 1.25rem;
+}
+
+.condition__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.condition__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.condition__text p {
+  position: relative;
+  padding-left: 0.9375rem;
+}
+
+.condition__text p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #21272A;
 }
 
 .swiper {
@@ -4026,6 +4139,10 @@ button.swiper-pagination-bullet {
   }
 
   .form-data-profile__button:hover {
+    background: #21272A;
+  }
+
+  .form-password-profile__button-2:hover {
     background: #21272A;
   }
 }

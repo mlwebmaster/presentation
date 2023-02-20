@@ -15,6 +15,7 @@
    &__content {
       border: 1px solid $lightLightGrayColor;
       padding: rem(30);
+      margin-bottom: rem(40);
    }
    // .profile__title
    &__title {
@@ -94,6 +95,7 @@
    border: 1px solid $lightLightGrayColor;
    padding: rem(40);
    display: flex;
+   margin-bottom: rem(40);
    // .data-profile__customer
    &__customer {
    }
@@ -249,11 +251,17 @@ input[name = "phone"] {
    width: 200px;
    margin: 0 rem(43);
 }
+input[name = "newpas"] {
+   //width: 200px;
+   margin-left: rem(26);
+}
 .select {
    width: 200px;
    margin: 0 rem(45) 0 rem(100);
 }
 .password-profile {
+   border: 1px solid $lightLightGrayColor;
+   padding: rem(40) rem(60);
    // .password-profile__form
    &__form {
    }
@@ -264,21 +272,57 @@ input[name = "phone"] {
    }
    // .form-password-profile__item
    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(50);
+      margin-bottom: rem(20);
    }
    // .form-password-profile__label
    &__label {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
    }
    // .form-password-profile__input
    &__input {
+      outline: none;
+      border: 1px solid $lightLightGrayColor;
+      border-radius: 4px;
+      padding: 10px;
    }
-   // .form-password-profile__button
-   &__button {
+   // .form-password-profile__button-2
+   &__button-2 {
+      /* display: flex;
+      align-items: center; */
+      background: $grayColor;
+      color: $whiteColor;
+      padding: rem(15) rem(35);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $dark2GrayColor;
+         }
+      }
+   }
+   // .form-password-profile__button-2-wrapper
+   &__button-2-wrapper {
+      display: flex;
+      justify-content: flex-end;
    }
    // .form-password-profile__show-icon
    &__show-icon {
    }
    // .form-password-profile__show-text
    &__show-text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
    }
    // .form-password-profile__condition
    &__condition {
@@ -288,10 +332,41 @@ input[name = "phone"] {
    }
 }
 .condition {
+   background: $blockBgColor;
+   padding: rem(7);
+   margin-bottom: rem(20);
    // .condition__title
    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+      margin-bottom: rem(8);
    }
    // .condition__text
    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: $blackColor;
+      margin-bottom: rem(8);
+      padding-left: rem(16);
+      p {
+         position: relative;
+         padding-left: rem(15);
+         &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(0px, -50%);
+            left: 0;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: $dark2GrayColor;
+         }
+      }
    }
 }
