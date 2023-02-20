@@ -3134,9 +3134,16 @@ input[name=newpas] {
   padding: 10px;
 }
 
+.form-password-profile__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form-password-profile__button-2 {
-  /* display: flex;
-  align-items: center; */
   background: #5B5B5B;
   color: #ffffff;
   padding: 0.9375rem 2.1875rem;

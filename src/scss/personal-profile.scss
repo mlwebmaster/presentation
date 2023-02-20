@@ -293,10 +293,12 @@ input[name = "newpas"] {
       border-radius: 4px;
       padding: 10px;
    }
+   &__button {
+      display: flex;
+      align-items: center;
+   }
    // .form-password-profile__button-2
    &__button-2 {
-      /* display: flex;
-      align-items: center; */
       background: $grayColor;
       color: $whiteColor;
       padding: rem(15) rem(35);
