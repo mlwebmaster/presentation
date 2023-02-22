@@ -48,6 +48,15 @@
     // .page__profile
     &__profile {
    }
+    // .page__articles
+    &__articles {
+   }
+   // .page__article
+   &__article {
+   }
+   // .page__basket
+   &__basket {
+   }
 }
 [class*="__breadcrumbs"] {
    font-family: 'Raleway';
@@ -64,6 +73,13 @@
          line-height: 16px;
          color: $orangeColor;
       }
+}
+[class*="__breadcrumbs-link"] {
+   @media (any-hover: hover){
+      &:hover{
+         color: $blueColor;
+      }
+   }
 }
 [class*="__header"] {
    display: flex;

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230220143349">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230222134256">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,39 +14,50 @@
 
 <body>
 	<div class="wrapper">
-		<!-- HEADER-OFFICE -->
-		<header class="header__office office-header">
-			<div class="office-header__container">
-				<div class="office-header__body">
-					<div class="office-header__address">Butcher Shop 1316 3rd Street Suite 301 Santa Monica CA 90401</div>
-					<div class="office-header__main">
-						<div class="office-header__logo">
-							<div class="office-header__logo-image">
-								<picture><source srcset="img/header-office/logo.webp" type="image/webp"><img src="img/header-office/logo.png" alt="Logo"></picture>
-							</div>
-						</div>
-						<div class="office-header__actions">
-							<button type="submit" class="office-header__button">My account</button>
-							<div class="office-header__basket">
-								<picture><source srcset="img/header-office/basket.webp" type="image/webp"><img src="img/header-office/basket.png" alt="Basket"></picture>
-							</div>
-						</div>
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__top">promotional discounts up to 70%</div>
+			<div class="header__container">
+				<div class="header__body">
+					<a href="index.html" class="header__logo">
+						<img src="img/header/logo.svg" alt="Logo">
+					</a>
+					<div class="header__contacts">
+						<a href="tel:01482 322191" class="header__phone"><span>Phone:</span> 01482 322191</a>
+						<a href="mailto:simon@smithsurveyingequipment.co.uk" class="header__email"><span>E-mail:</span> simon@smithsurveyingequipment.co.uk</a>
 					</div>
-					<div class="office-header__menu menu-office">
-						<nav class="menu-office__body">
-							<ul class="menu-office__list">
-								<li class="menu-office__item"><a href="#!" class="menu-office__link">Shop all</a></li>
-								<li class="menu-office__item"><a href="#!" class="menu-office__link">Meat</a></li>
-								<li class="menu-office__item"><a href="#!" class="menu-office__link">Poultry</a></li>
-								<li class="menu-office__item"><a href="#!" class="menu-office__link">Seafood</a></li>
-							</ul>
-						</nav>
+					<div class="header__acsions">
+						<a href="#!" class="header__articles">Articles</a>
 					</div>
 				</div>
 			</div>
 		</header>
-
 		<main class="page">
+			<!-- SEARCH -->
+			<section class="page__search search">
+				<div class="search__container">
+					<div class="search__body">
+						<div class="search__main">
+							<h1 class="search__tagline"><span>S</span>mith</br> <span>s</span>urveying</br> <span>e</span>quipment</h1>
+							<div class="search__desc">Equipped to meet your goals</div>
+						</div>
+						<div class="search__form form-search">
+							<form action="#" class="form-search__item form">
+								<picture><source srcset="img/search/search.webp" type="image/webp"><img src="img/search/search.png" alt="Search"></picture>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="form-search__input">
+							</form>
+							<button type="submit" class="form-search__button">Search</button>
+						</div>
+						<div class="search__cart cart-search">
+							<a href="#!" class="cart-search__text">My cart</a>
+							<a href="#!" class="cart-search__image">
+								<picture><source srcset="img/search/cart.webp" type="image/webp"><img src="img/search/cart.png" alt="Cart"></picture>
+								<span>2</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- PERSONAL-PROFILE -->
 			<section class="page__profile profile">
 				<div class="profile__container">
@@ -177,7 +188,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230220143349"></script>
+	<script src="js/app.min.js?_v=20230222134256"></script>
 </body>
 
 </html>

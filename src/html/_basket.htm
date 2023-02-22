@@ -1,0 +1,150 @@
+<!-- BASKET -->
+<section class="page__basket basket">
+   <div class="basket__container">
+      <div class="basket__header">
+         <h2 class="basket__title title-h2">Basket</h2>
+         <div class="basket__breadcrumbs">
+            <a href="#!" class="basket__breadcrumbs-link">Home</a> / <span>Basket</span>
+         </div >
+      </div>
+      <div class="basket__amount amount-basket">
+         <div class="amount-basket__wrapper">
+            <h2 class="amount-basket__title title-h2">You Have 2 Item (s) In Your Cart</h2>
+            <div class="amount-basket__line">
+               <img src="@img/basket/line-1.png" alt="Image">
+            </div>
+         </div >
+         <div class="amount-basket__label label-basket">
+            <div class="label-basket__product">Product</div>
+            <div class="label-basket__price">Price</div>
+            <div class="label-basket__quantity">Quantity</div>
+            <div class="label-basket__subtotal">Subtotal</div>
+         </div>
+         <div class="amount-basket__items">
+            <div class="amount-basket__item item-basket">
+               <div class="item-basket__image">
+                  <img src="@img/basket/item.jpg" alt="Image">
+               </div>
+               <div class="item-basket__desc">DATUM DPL5 PLUS LINE LASER</div>
+               <div class="item-basket__price">£2,350.00</div>
+
+               <div class="item-basket__quantity">
+                  <button type="submit" class="item-basket__button _minus">-</button>
+                  <div class="item-basket__thing">1</div>
+                  <button type="submit" class="item-basket__button _plus">+</button>
+               </div >
+
+               <div class="item-basket__subtotal">£2,350.00</div>
+               <button type="submit"  class="item-basket__cross">
+                  <img src="@img/basket/cross.svg" alt="Icon">
+               </button>
+            </div>
+            <div class="amount-basket__item item-basket">
+               <div class="item-basket__image">
+                  <img src="@img/basket/item.jpg" alt="Image">
+               </div>
+               <div class="item-basket__desc">DATUM DPL5 PLUS LINE LASER</div>
+               <div class="item-basket__price">£2,350.00</div>
+
+               <div class="item-basket__quantity">
+                  <button type="submit" class="item-basket__button _minus">-</button>
+                  <div class="item-basket__thing">1</div>
+                  <button type="submit" class="item-basket__button _plus">+</button>
+               </div>
+
+               <div class="item-basket__subtotal">£2,350.00</div>
+               <button type="submit" class="item-basket__cross">
+                  <img src="@img/basket/cross.svg" alt="Icon">
+               </button>
+            </div>
+         </div>
+      </div>
+      <div class="basket__calculate calculate-basket">
+         <div class="calculate-basket__item">
+            <div class="calculate-basket__wrapper">
+               <h2 class="calculate-basket__title title-h2">Calculate shipping</h2>
+               <div class="calculate-basket__line">
+                  <img src="@img/basket/line-2.png" alt="Image">
+               </div>
+            </div>
+            <div class="calculate-basket__form form-calculate">
+               <form action="#!" class="form-calculate__body form">
+                  <div class="form-calculate__item item-subject-calculate">
+                     <input type="text" class="form-calculate__input input-subject" placeholder="Subject">
+                  </div>
+                  <div class="form-calculate__item-wrapper">
+                     <div class="form-calculate__item item-county-calculate">
+                        <input type="text" class="form-calculate__input input-county" placeholder="County">
+                     </div>
+                     <div class="form-calculate__item item-town-calculate">
+                        <input type="text" class="form-calculate__input input-town" placeholder="Town\City">
+                     </div>
+                  </div>
+                  <div class="form-calculate__item-wrapper">
+                     <div class="form-calculate__item item-postcode-calculate">
+                        <input type="text" class="form-calculate__input input-postcode" placeholder="Postcode">
+                     </div>
+                     <div class="form-calculate__button-wrapper">
+                        <button type="submit" class="form-calculate__button">Update Totals</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="calculate-basket__code code-basket">
+               <div class="code-basket__wrapper">
+                  <h2 class="code-basket__title title-h2">Have A Promotional Code?</h2>
+                  <div class="code-basket__line">
+                     <img src="@img/basket/line-4.png" alt="Image">
+                  </div>
+               </div>
+               <div class="code-basket__button-wrapper">
+                  <div class="code-basket__item">
+                     <input type="text" class="code-basket__input" placeholder="Coupon code">                  
+                  </div>
+                  <button type="submit" class="code-basket__button">Apply coupon</button>                 
+               </div>
+            </div>
+         </div>
+         <div class="calculate-totals__item">
+            <div class="calculate-totals__wrapper">
+               <h2 class="calculate-totals__title title-h2">Basket totals</h2>
+               <div class="calculate-totals__line">
+                  <img src="@img/basket/line-3.png" alt="Image">
+               </div>
+            </div>
+            <div class="calculate-totals__subtotal subtotal">
+               <div class="subtotal__title">Subtotal</div>
+               <div class="subtotal__price">£2,350.00</div>
+            </div>
+            <div class="calculate-totals__shipping shipping">
+               <div class="shipping__title">Shipping</div>
+               <div class="shipping__inner">
+                  <div class="shipping__text">Shipping options will be updated during checkout</div>
+                  <div class="shipping__options">
+                     <div class="shipping__options-item">
+                        <input id="freeShipping" type="radio" value="free" name="shipping" class="shipping__input">
+                        <label for="freeShipping" class="shipping__label">Free shipping</label>
+                     </div>
+                     <div class="shipping__options-item">
+                        <input id="payShipping" type="radio" value="pay" name="shipping" class="shipping__input">
+                        <label for="payShipping" class="shipping__label">Flat rate: £10.00</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="calculate-totals__vat vat">
+               <div class="vat__title">VAT</div>
+               <div class="vat__price">£45.00</div>
+            </div>
+            <div class="calculate-totals__total total">
+               <div class="total__title">Total</div>
+               <div class="total__price">£270.00</div>
+            </div>
+            <div class="calculate-totals__buttons">
+               <button type="submit" class="calculate-totals__button">UPDATE BASKET</button>
+               <button type="submit" class="calculate-totals__button-2">PROCEED TO CHECKOUT</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
