@@ -75,11 +75,13 @@
       line-height: 150%;
       letter-spacing: 0.0075em;
       color: $blackColor;
+      transition: color 0.3s ease 0s;
    }
    // .menu-geodesy__button
    &__button {
       display: flex;
       align-items: center;
+      transition: all 0.3s ease 0s;
    }
 }
 
@@ -243,6 +245,7 @@
       }
    }
 }
+
 
 
 

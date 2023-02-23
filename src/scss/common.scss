@@ -57,6 +57,12 @@
    // .page__basket
    &__basket {
    }
+   // .page__check
+   &__check {
+   }
+   // .page__order
+   &__order {
+   }
 }
 [class*="__breadcrumbs"] {
    font-family: 'Raleway';
@@ -112,4 +118,66 @@
          margin-bottom: rem(16);
       }
    }
+}
+input::placeholder {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: $blackColor;
+}
+// Блок зі спойлерами
+.menu-geodesy__spollers {
+	display: grid;
+	gap: 5px;
+}
+// Спойлер
+.menu-geodesy-spollers__item {
+	font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0075em;
+    color: $blackColor;
+}
+// Заголовок спойлера
+.menu-geodesy-spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	//border: 1px solid #eee;
+	//padding: rem(10) 0;
+	//border-radius: rem(5);
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			background-color: #000;
+			height: 1px;
+			width: 8px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+		&._spoller-active {
+			&::before {
+				transform: translateX(-75%) rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+	}
+}
+// Контент спойлера
+.menu-geodesy-spollers__body {
 }

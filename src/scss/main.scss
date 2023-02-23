@@ -54,6 +54,12 @@
       text-align: center;
       text-transform: uppercase;
       padding: 25px 0 13px 0;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $blue3Color;
+         }
+      }
    }
    // .menu__sub-list
    &__sub-list {

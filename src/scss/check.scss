@@ -1,0 +1,296 @@
+/* CHECK */
+.check {
+   // .check__container
+   &__container {
+   }
+   // .check__inner
+   &__inner {
+      padding-top: rem(40);
+   }
+   // .check__header
+   &__header {
+      padding-bottom: rem(20);
+   }
+   // .check__title
+   &__title {
+   }
+   // .check__breadcrumbs
+   &__breadcrumbs {
+   }
+   // .check__breadcrumbs-link
+   &__breadcrumbs-link {
+   }
+   // .check__contacts
+   &__contacts {
+   }
+   // .check__promotional
+   &__promotional {
+   }
+   // .check__billing
+   &__billing {
+   }
+}
+.contacts-check {
+   display: flex;
+   align-items: center;
+   padding-bottom: rem(42);
+   border-bottom: 1px solid $borderColor;
+   gap: rem(37);
+   // .contacts-check__phone
+   &__phone,
+   // .contacts-check__email
+   &__email {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: $borderFormColor;
+      span {
+         color: $blueColor;
+         transition: color 0.3s ease 0s;
+         @media (any-hover: hover){
+            &:hover{
+               color: $orangeColor;
+            }
+         }
+      }
+   }
+}
+.promotional-check {
+   padding-top: rem(25);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: rem(25);
+   border-bottom: 1px solid $borderColor;
+   // .promotional-check__title
+   &__title {
+      color: $blackColor;
+   }
+   // .promotional-check__form
+   &__form {
+   }
+}
+.form-promotional {
+   // .form-promotional__form
+   &__form {
+      display: flex;
+      align-items: center;
+   }
+   // .form-promotional__item
+   &__item {
+      border: 1px solid $borderFormColor;
+      border-radius: 4px;
+      padding: rem(22);
+      width: rem(300);
+      margin-right: rem(10);
+   }
+   // .form-promotional__input
+   &__input {
+      width: 100%;
+      background: $bgColor;
+      outline: none;
+      &::placeholder {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 125%;
+         color: $blackColor;
+      }
+   }
+   // .form-promotional__button-wrapper
+   &__button-wrapper {
+   }
+   // .form-promotional__button
+   &__button {
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: $whiteColor;
+      background: $blueColor;
+      padding: rem(23) rem(47);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
+}
+.billing-check {
+   padding-top: rem(50);
+   display: flex;
+   margin-bottom: rem(110);
+   // .billing-check__details
+   &__details {
+      flex: 0 0 530px;
+      padding-right: rem(60);
+   }
+   // .billing-check__deliver
+   &__deliver {
+      flex: 1 1 auto;
+   }
+}
+.details-billing {
+   // .details-billing__wrapper
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .details-billing__title
+   &__title {
+      color: $blackColor;
+   }
+   // .details-billing__line
+   &__line {
+   }
+   // .details-billing__form
+   &__form {
+   }
+}
+.form-details {
+   // .form-details__body
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+   // .form-details__name
+   &__name {
+      display: flex;
+   }
+   // .form-details__item
+   &__item {
+      border: 1px solid $borderFormColor;
+      border-radius: 4px;
+      padding: rem(22);
+   }
+   // .form-details__input
+   &__input {
+      width: 100%;
+      background: $bgColor;
+      outline: none;
+   }
+   // .form-details__company
+   &__company {
+   }
+   // .form-details__country
+   &__country {
+   }
+   // .form-details__town 
+   &__town {
+   }
+   // .form-details__county
+   &__county {
+   }
+   // .form-details__postcode
+   &__postcode {
+   }
+   // .form-details__phone
+   &__phone {
+   }
+   // .form-details__email
+   &__email {
+   }
+   // .form-details__account
+   &__account {
+   }
+   // .form-details__checkbox
+   &__checkbox {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+   }
+   // .form-details__label
+   &__label {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 125%;
+      color: $blackColor;
+   }
+}
+.item-first-details {
+   width: rem(230);
+   margin-right: rem(10);
+}
+.input-first-details {
+}
+.item-last-details {
+}
+.input-last-details {
+}
+.input-company-details {
+}
+.input-country-details {
+}
+.input-town-details {
+}
+.input-county-details {
+}
+.input-postcode-details {
+}
+.input-phone-details {
+}
+.input-email-details {
+}
+.checkbox {
+   // .checkbox__input
+   &__input {
+   }
+}
+.deliver-billing {
+   padding-left: rem(55);
+   // .deliver-billing__form
+   &__form {
+   }
+}
+.form-deliver {
+   // .form-deliver__body
+   &__body {
+   }
+   // .form-deliver__wrapper
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: rem(10);
+   }
+   // .form-deliver__checkbox
+   &__checkbox {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+   }
+   // .form-deliver__label
+   &__label {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 121%;
+      color: $blackColor;
+   }
+   // .form-deliver__image
+   &__image {
+   }
+   // .form-deliver__email
+   &__email {
+   }
+   // .form-deliver__item
+   &__item {
+      border: 1px solid $borderFormColor;
+      border-radius: 4px;
+      padding: rem(22);
+      width: rem(470);
+   }
+   // .form-deliver__input
+   &__input {
+      width: 100%;
+      background: $bgColor;
+      outline: none;
+   }
+}

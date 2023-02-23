@@ -1,0 +1,257 @@
+/* ORDER */
+.order {
+   // .order__container
+   &__container {
+   }
+   // .order__body
+   &__body {
+   }
+   // .order__wrapper-title
+   &__wrapper-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: rem(30);
+   }
+   // .order__title
+   &__title {
+      color: $blackColor;
+   }
+   // .order__image
+   &__image {
+      margin-right: rem(30);
+   }
+   // .order__holder
+   &__holder {
+      padding-bottom: rem(80);
+   }
+   // .order__box-header
+   &__box-header {
+      display: flex;
+      align-items: center;
+      gap: 726px;
+      padding-bottom: rem(14);
+      border-bottom: 1px solid $borderColor;
+   }
+   // .order__label-1
+   &__label-1,
+   &__label-2  {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 122%;
+      color: $blackColor;
+   }
+   // .order__label-2
+   &__label-2 {
+   }
+   // .order__product-wrapper
+   &__product-wrapper {
+      padding-top: rem(24);
+      padding-bottom: rem(24);
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $borderColor;
+   }
+   // .order__desk
+   &__desk {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 122%;
+      color: $blueColor;
+      margin-right: rem(280);
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+   // .order__price
+   &__price {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 122%;
+      color: $blueColor;
+   }
+   // .order__inner
+   &__inner {
+      padding-top: rem(28);
+   }
+   // .order__methods
+   &__methods {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      margin-bottom: rem(33);
+   }
+   // .order__card
+   &__card {
+   }
+   // .order__input
+   &__input {
+   }
+   // .order__label
+   &__label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 122%;
+      color: $blackColor;
+   }
+   // .order__paypal
+   &__paypal {
+   }
+   // .order__form-block
+   &__form-block {
+   }
+   // .order__form
+   &__form {
+   }
+}
+.order-totals {
+   // .order-totals__wrapper
+   &__wrapper {
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 1px solid $borderColor;
+      padding-bottom: rem(22);
+   }
+   // .order-totals__item
+   &__item {
+      flex: 0 0 475px;
+      padding-top: rem(60);
+   }
+   // .order-totals__wrapper
+   &__wrapper {
+   }
+   // .order-totals__title
+   &__title {
+   }
+   // .order-totals__line
+   &__line {
+   }
+   // .order-totals__subtotal
+   &__subtotal {
+   }
+   // .order-totals__shipping
+   &__shipping {
+   }
+   // .order-totals__vat
+   &__vat {
+   }
+   // .order-totals__total
+   &__total {
+   }
+}
+.subtotal {
+   // .subtotal__title
+   &__title {
+   }
+   // .subtotal__price
+   &__price {
+   }
+}
+.shipping {
+   // .shipping__title
+   &__title {
+   }
+   // .shipping__inner
+   &__inner {
+   }
+   // .shipping__text
+   &__text {
+   }
+   // .shipping__options
+   &__options {
+   }
+   // .shipping__options-item
+   &__options-item {
+   }
+   // .shipping__input
+   &__input {
+   }
+   // .shipping__label
+   &__label {
+   }
+}
+.vat {
+   // .vat__title
+   &__title {
+   }
+   // .vat__price
+   &__price {
+   }
+}
+.total {
+   // .total__title
+   &__title {
+   }
+   // .total__price
+   &__price {
+   }
+}
+.form-order {
+   // .form-order__body
+   &__body {
+   }
+   // .form-order__wrapper
+   &__wrapper {
+      display: flex;
+      gap: 18px;
+      margin-bottom: rem(28);
+   }
+   // .form-order__item
+   &__item {
+      border: 1px solid $borderFormColor;
+      border-radius: 4px;
+      padding: rem(22);
+   }
+   // .form-order__input
+   &__input {
+      width: 100%;
+      background: $bgColor;
+      outline: none;
+   }
+   // .form-order__button-wrapper
+   &__button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+   }
+   // .form-order__button
+   &__button {
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: $whiteColor;
+      background: $blueColor;
+      padding: rem(23) rem(47);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
+}
+.item-order-card {
+   width: rem(470);
+
+}
+.item-order-expiry {
+   width: rem(470);
+}
+.item-order-cvv {
+   width: rem(194);
+}
+.input-card-order {
+}
+.input-expiry-order {
+}
+.input-cvv-order {
+}

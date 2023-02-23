@@ -1,0 +1,90 @@
+<!-- ORDER -->
+<section class="page__order order">
+   <div class="order__container">
+      <div class="order__body">
+         <div class="order__wrapper-title">
+            <h2 class="order__title title-h2">Your order</h2>
+            <div class="order__image">
+               <img src="@img/order/line.png" alt="Line">
+            </div>
+         </div>
+         <div class="order__holder">            
+            <div class="order__box-header">
+               <div class="order__label-1">Product</div>
+               <div class="order__label-2">Subtotal</div>
+            </div>
+            <div class="order__product-wrapper">
+               <div class="order__image">
+                  <img src="@img/order/product.jpg" alt="Image">
+               </div>
+               <a href="#!" class="order__desk">DATUM DPL5 PLUS LINE LASER x1</a>
+               <div class="order__price">£2,350.00</div>
+            </div>
+            <div class="order-totals__wrapper">
+               <div class="order-totals__item">
+                  <div class="order-totals__subtotal subtotal">
+                     <div class="subtotal__title">Subtotal</div>
+                     <div class="subtotal__price">£2,350.00</div>
+                  </div>
+                  <div class="order-totals__shipping shipping">
+                     <div class="shipping__title">Shipping</div>
+                     <div class="shipping__inner">
+                       <div class="shipping__text">Shipping options will be updated during checkout</div>
+                       <div class="shipping__options">
+                         <div class="shipping__options-item">
+                           <input id="freeShipping" type="radio" value="free" name="shipping" class="shipping__input">
+                           <label for="freeShipping" class="shipping__label">Free shipping</label>
+                         </div>
+                         <div class="shipping__options-item">
+                           <input id="payShipping" type="radio" value="pay" name="shipping" class="shipping__input">
+                           <label for="payShipping" class="shipping__label">Flat rate: £10.00</label>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div class="order-totals__vat vat">
+                     <div class="vat__title">VAT</div>
+                     <div class="vat__price">£45.00</div>
+                  </div>
+                  <div class="order-totals__total total">
+                     <div class="total__title">Total</div>
+                     <div class="total__price">£270.00</div>
+                  </div>
+               </div>
+            </div >
+            <div class="order__inner">
+               <div class="order__methods">
+                  <div class="order__card">
+                     <input id="orderCard" type="radio" value="card" name="order" class="order__input">
+	                  <label for="orderCard" class="order__label">Debit or Credit Card (Processed by PayPal)</label>
+                  </div>
+                  <div class="order__paypal">
+                     <input id="orderPaypal" type="radio" value="paypal" name="order" class="order__input">
+	                  <label for="orderPaypal" class="order__label">PayPal</label>
+                  </div>
+               </div>
+               <div class="order__form-block">
+                  <div class="order__form form-order">
+                     <form action="#!" class="form-order__body">
+                        <div class="form-order__wrapper">
+                           <div class="form-order__item item-order-card">
+                              <input type="text" class="form-order__input input-card-order" placeholder="Card number *">
+                           </div>
+                           <div class="form-order__item item-order-expiry">
+                              <input type="text" class="form-order__input input-expiry-order" placeholder="Expiry (MM/YY) *">
+                           </div>
+                           <div class="form-order__item item-order-cvv">
+                              <input type="text" class="form-order__input input-cvv-order" placeholder="CVV *">
+                           </div>
+                        </div>
+                        <div class="form-order__button-wrapper">
+                           <button type="submit" class="form-order__button">place order</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
