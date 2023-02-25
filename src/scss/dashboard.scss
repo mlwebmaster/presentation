@@ -1,0 +1,139 @@
+/* DASHBOARD */
+.dashboard {
+   padding-bottom: rem(80);
+   // .dashboard__container
+   &__container {
+   }
+   // .dashboard__form
+   &__form {
+      margin-top: rem(40);
+   }
+   // .dashboard__body
+   &__body {
+      margin-top: rem(40);
+      border: 1px solid $lightGrayColor;
+      padding: rem(15) rem(15) 0 rem(15);
+   }
+   // .dashboard__row
+   &__row {
+   }
+   // .dashboard__data
+   &__data {
+   }
+   // .dashboard__pagination
+   &__pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+      padding: rem(15);
+   }
+   // .dashboard__pagination-items
+   &__pagination-items {
+   }
+   // .dashboard__pagination-page
+   &__pagination-page {
+   }
+}
+.form-dashboard {
+   // .form-dashboard__item
+   &__item {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      height: 40px;
+      //background: $bgColor;
+      border: 1px solid #CECECE;
+      border-radius: 4px;
+      padding: 12px;
+   }
+   // .form-dashboard__input
+   &__input {
+      background: $bgColor;
+      outline: none;
+      width: rem(460);
+   }
+}
+.row-dashboard {
+   display: flex;
+   align-items: center;
+   padding-bottom: rem(15);
+   // .row-dashboard__title
+   &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      color: $blackColor;
+   }
+}
+.title-1 {
+   flex: 0 0 320px;
+}
+.title-2 {
+   flex: 0 0 200px;
+}
+.title-3 {
+   flex: 0 0 120px;
+}
+.title-4 {
+   flex: 0 0 250px;
+}
+.title-5 {
+   flex: 0 0 200px;
+}
+.title-6 {
+}
+.data-dashboard {
+   display: flex;
+   align-items: center;
+   padding: rem(10) 0;
+   border-top: 1px solid $lightGrayColor;
+   // .data-dashboard__item
+   &__item {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: $blackColor;
+   }
+   // .data-dashboard__select
+   &__select {
+   }
+}
+.item-id {
+   flex: 0 0 320px;
+   color: $blue2Color;
+   @media (any-hover: hover){
+      &:hover{
+         color: $orangeColor;
+      }
+   }
+
+}
+.item-fulfill {
+   flex: 0 0 200px;
+}
+.item-amount {
+   flex: 0 0 120px;
+   color: $blue2Color;
+   @media (any-hover: hover){
+      &:hover{
+         color: $orangeColor;
+      }
+   }
+}
+.item-status {
+   flex: 0 0 250px;
+   padding-right: rem(30);
+}
+.item-customer {
+   flex: 0 0 200px;
+   white-space: nowrap;
+}
+.item-price {
+}

@@ -1,0 +1,205 @@
+/* ADD-ADDRESS */
+.add-address {
+   padding-top: rem(40);
+   padding-bottom: rem(80);
+   // .add-address__container
+   &__container {
+   }
+   // .add-address__body
+   &__body {
+      display: flex;
+   }
+   // .add-address__content
+   &__content {
+      border: 1px solid $lightGrayColor;
+      padding: rem(27);
+      flex: 1 1 auto;
+   }
+   // .add-address__top-block
+   &__top-block {
+   }
+   // .add-address__breadcrumbs
+   &__breadcrumbs {
+   }
+   // .add-address__breadcrumbs-link
+   &__breadcrumbs-link {
+   }
+   // .add-address__title
+   &__title {
+   }
+   // .add-address__form
+   &__form {
+   }
+}
+.profile {
+   // .profile__side
+   &__side {
+   }
+}
+.side-profile {
+   // .side-profile__title
+   &__title {
+   }
+   // .side-profile__menu
+   &__menu {
+   }
+}
+.menu-side-profile {
+   // .menu-side-profile__body
+   &__body {
+   }
+   // .menu-side-profile__list
+   &__list {
+   }
+   // .menu-side-profile__item
+   &__item {
+   }
+   // .menu-side-profile__image
+   &__image {
+   }
+   // .menu-side-profile__link
+   &__link {
+   }
+}
+// ._link-current
+._link-current {
+}
+.form-add-address {
+   border: 1px solid $lightGrayColor;
+   padding: rem(27);
+   // .form-add-address__body
+   &__body {
+      max-width: rem(500);
+      margin: 0 auto;
+   }
+   // .form-add-address__item
+   &__item {
+      margin-bottom: rem(15);
+   }
+   // .form-add-address__lable
+   &__lable {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      color: $blackColor;
+      margin-bottom: rem(7);
+      display: block;
+   }
+   // .form-add-address__select
+   &__select {
+   }
+   // .form-add-address__input
+   &__input {
+      outline: none;
+      height: 40px;
+      padding: 0 rem(15);
+      border: 1px solid $lightLightGrayColor;
+      border-radius: 4px;
+   }
+   // .form-add-address__button-wrapper
+   &__button-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: rem(10);
+      padding-top: rem(20);
+   }
+   // .form-add-address__button
+   &__button {
+   }
+}
+.lable-agreement {
+   display: inline;
+   margin-bottom: 0;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 120%;
+}
+.item {
+   // .item__firstname
+   &__firstname {
+      /* display: flex;
+      flex-direction: column; */
+   }
+   // .item__lasttname
+   &__lasttname {
+   }
+   // .item__phone
+   &__phone {
+   }
+   // .item__company
+   &__company {
+   }
+   // .item__street
+   &__street {
+   }
+   // .item__city
+   &__city {
+   }
+   // .item__state
+   &__state {
+   }
+   // .item__zip
+   &__zip {
+   }
+   // .item__agreement
+   &__agreement {
+      display: flex;
+      align-items: center;
+   }
+
+
+   &__firstname,
+   &__lasttname,
+   &__phone,
+   &__company,
+   &__city,
+   &__zip {}
+}
+.item-add-address {
+   display: flex;
+   justify-content: space-between;
+}
+.input-addressfirst {
+}
+.input-addresslast {
+}
+.input-addresspone {
+}
+.input-addresscompany {
+}
+.input-addressstreet {
+}
+.input-addresscity {
+}
+.input-addresszip {
+}
+.input-addressagreement {
+   margin-right: rem(7);
+}
+.button-cancel {
+   padding: rem(15) rem(35);
+   border: 1px solid $borderColor;
+   border-radius: 4px;
+   transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+}
+.button-add-adress {
+   display: inline-block;
+      background: $blueColor;
+      color: $whiteColor;
+      padding: rem(15) rem(35);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+}

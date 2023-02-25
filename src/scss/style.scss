@@ -225,3 +225,15 @@ body {
 // Підключення стилів окремих сторінок check-out.html
 @import "check";
 @import "order";
+
+// Підключення стилів окремих сторінок order-history.html
+@import "current-orders";
+
+// Підключення стилів окремих сторінок address-book.html
+@import "address-book";
+
+// Підключення стилів окремих сторінок new-address.html
+@import "add-address";
+
+// Підключення стилів окремих сторінок dashboard.html
+@import "dashboard";

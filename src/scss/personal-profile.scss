@@ -82,15 +82,21 @@
       line-height: 120%;
       color: $blackColor;
       letter-spacing: -1px;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
    }
-   &__link-current {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 120%;
-      color: $blackColor;
-      letter-spacing: -1px;
-   }
+}
+._link-current {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 120%;
+   color: $blackColor;
+   letter-spacing: -1px;
 }
 .data-profile {
    border: 1px solid $lightLightGrayColor;
@@ -179,9 +185,14 @@
       line-height: 120%;
       color: $blackColor;
    }
+   // .form-data-profile__select-wrapper
+   &__select-wrapper {
+      width: 200px;
+      margin: 0 rem(45) 0 rem(100);
+   }
    // .form-data-profile__select
    &__select {
-      width: 100%;
+      //width: 100%;
    }
    // .form-data-profile__warning
    &__warning {
@@ -207,14 +218,14 @@
    }
    // .form-data-profile__button
    &__button {      
-      background: $grayColor;
+      background: $blueColor;
       color: $whiteColor;
       padding: rem(15) rem(35);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
       @media (any-hover: hover){
          &:hover{
-            background: $dark2GrayColor;
+            background: $blue2Color;
          }
       }
    }
@@ -257,8 +268,8 @@ input[name = "newpas"] {
    margin-left: rem(26);
 }
 .select {
-   width: 200px;
-   margin: 0 rem(45) 0 rem(100);
+   width: 100%;
+   //margin: 0 rem(45) 0 rem(100);
 }
 .password-profile {
    border: 1px solid $lightLightGrayColor;
@@ -300,14 +311,14 @@ input[name = "newpas"] {
    }
    // .form-password-profile__button-2
    &__button-2 {
-      background: $grayColor;
+      background: $blueColor;
       color: $whiteColor;
       padding: rem(15) rem(35);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
       @media (any-hover: hover){
          &:hover{
-            background: $dark2GrayColor;
+            background: $blue2Color;
          }
       }
    }
