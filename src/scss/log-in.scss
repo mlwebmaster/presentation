@@ -1,0 +1,125 @@
+/* LOG-IN */
+.log-in {
+   padding-top: rem(40);
+   padding-bottom: rem(80);
+   // .log-in__container
+   &__container {
+   }
+   // .log-in__form
+   &__form {
+   }
+}
+.form-log-in {
+   border: 1px solid $lightGrayColor;
+   max-width: rem(700);
+   margin: 0 auto;
+   padding: rem(60);
+   background: $whiteColor;
+   color: $blackColor;
+   // .form-log-in__body
+   &__body {
+      padding: 0 rem(80) rem(40) rem(80);
+   }
+   // .form-log-in__title
+   &__title {
+      text-align: center;
+   }
+   // .form-log-in__item
+   &__item {
+      margin-bottom: rem(30);
+   }
+   // .form-log-in__label
+   &__label {
+      display: block;
+      margin-bottom: rem(10);
+   }
+   // .form-log-in__inpun
+   &__inpun {
+      height: rem(40);
+      padding: rem(15);
+      border-radius: rem(5);
+      outline: none;
+      border: 1px solid $borderColor;
+      width: 100%;
+   }
+   // .form-log-in__item-wrapper
+   &__item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .form-log-in__show-button
+   &__show-button {
+      display: flex;
+      align-items: center;
+   }
+   // .form-log-in__show-icon
+   &__show-icon {
+   }
+   // .form-log-in__show-text
+   &__show-text {
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+   // .form-log-in__button
+   &__button {
+      width: 100%;
+      background: $blueColor;
+      color: $whiteColor;
+      padding: rem(15) rem(35);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
+   // .form-log-in__forgot
+   &__forgot {
+      margin: 0 auto;
+      text-align: center;
+      color: $blue2Color;
+      transition: color 0.3s ease 0s;
+      border-bottom: 1px solid $lightGrayColor;
+      padding-bottom: rem(30);
+      max-width: rem(200);
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+   // .form-log-in__link
+   &__link {
+   }
+   // .form-log-in__dont
+   &__dont {
+      padding-top: rem(30);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   // .form-log-in__dont-text
+   &__dont-text {
+   }
+   // .form-log-in__dont-link
+   &__dont-link {
+      border: 1px solid $lightGrayColor;
+      padding: rem(15) rem(35);
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+}
+.inpun-email-log-in {
+}
+.inpun-password-log-in {
+}

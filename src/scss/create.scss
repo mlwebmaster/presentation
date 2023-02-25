@@ -1,0 +1,127 @@
+/* CREATE */
+.create {
+   padding-top: rem(40);
+   padding-bottom: rem(80);
+   // .create__container
+   &__container {
+   }
+   // .create__form
+   &__form {
+   }
+}
+.form-create {
+   border: 1px solid $lightGrayColor;
+   max-width: rem(700);
+   margin: 0 auto;
+   padding: rem(60);
+   background: $whiteColor;
+   color: $blackColor;
+   // .form-create__body
+   &__body {
+      padding: 0 rem(80) rem(40) rem(80);
+   }
+   // .form-create__name-wrapper
+   &__name-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: rem(30);
+   }
+   // .form-create__title
+   &__title {
+      text-align: center;
+   }
+   // .form-create__item
+   &__item {
+      margin-bottom: rem(30);
+   }
+   // .form-create__label
+   &__label {
+      display: block;
+      margin-bottom: rem(10);
+   }
+   // .form-create__inpun
+   &__inpun {
+      height: rem(40);
+      padding: rem(15);
+      border-radius: rem(5);
+      outline: none;
+      border: 1px solid $borderColor;
+      width: 100%;
+   }
+   // .form-create__item-wrapper
+   &__item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .form-create__show-button
+   &__show-button {
+      display: flex;
+      align-items: center;
+   }
+   // .form-create__show-icon
+   &__show-icon {
+   }
+   // .form-create__show-text
+   &__show-text {
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+   // .form-create__button
+   &__button {
+      width: 100%;
+      background: $blueColor;
+      color: $whiteColor;
+      padding: rem(15) rem(35);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
+   // .form-create__forgot
+   &__forgot {
+      margin: 0 auto;
+      border-bottom: 1px solid $lightGrayColor;
+      max-width: rem(200);
+   }
+   // .form-create__link
+   &__link {
+   }
+   // .form-create__dont
+   &__dont {
+      padding-top: rem(30);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   // .form-create__dont-text
+   &__dont-text {
+   }
+   // .form-create__dont-link
+   &__dont-link {
+      border: 1px solid $lightGrayColor;
+      padding: rem(15) rem(35);
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
+   }
+}
+.inpun-email-create {
+}
+.inpun-password-create {
+}
+.inpun-firstname-create {
+}
+.inpun-lastname-create {
+}
