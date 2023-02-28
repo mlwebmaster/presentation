@@ -65,7 +65,6 @@
    border-bottom: 1px solid $borderColor;
    // .promotional-check__title
    &__title {
-      color: $blackColor;
    }
    // .promotional-check__form
    &__form {
@@ -143,7 +142,6 @@
    }
    // .details-billing__title
    &__title {
-      color: $blackColor;
    }
    // .details-billing__line
    &__line {
@@ -272,7 +270,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 121%;
-      color: $blackColor;
+      color: $blueColor;
    }
    // .form-deliver__image
    &__image {

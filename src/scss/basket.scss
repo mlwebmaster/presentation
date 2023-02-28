@@ -30,11 +30,15 @@
    }
    // .amount-basket__title
    &__title {
-      color: $blackColor;
       margin-bottom: rem(20);
+      flex: 1 0 auto;
    }
    // .amount-basket__line
    &__line {
+      flex: 0 1 auto;
+      img {
+         max-width: 100%;
+      }
    }
    // .amount-basket__label
    &__label {
@@ -61,14 +65,23 @@
    // .label-basket__price
    &__price {
       flex: 0 0 175px;
+      @media (max-width:$tablet){
+         flex: 0 0 105px;
+      }
    }
    // .label-basket__quantity
    &__quantity {
       flex: 0 0 175px;
+      @media (max-width:$tablet){
+         flex: 0 0 125px;
+      }
    }
    // .label-basket__subtotal
    &__subtotal {
       flex: 0 0 175px;
+      @media (max-width:$tablet){
+         flex: 0 0 145px;
+      }
    }
 }
 .item-basket {
@@ -98,6 +111,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blueColor;
+      @media (max-width:$tablet){
+         flex: 0 0 120px;
+      }
    }
    // .item-basket__quantity
    &__quantity {
@@ -109,6 +125,9 @@
       color: $blackColor;
       display: flex;
       align-items: center;
+      @media (max-width:$tablet){
+         flex: 0 0 127px;
+      }
    }
    // .item-basket__button
    &__button {
@@ -143,6 +162,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blueColor;
+      @media (max-width:$tablet){
+         flex: 0 0 125px;
+      }
    }
    // .item-basket__cross
    &__cross {
@@ -158,6 +180,10 @@
 .calculate-basket {
    display: flex;
    padding-top: rem(80);
+   @media (max-width: em(1200)){
+       flex-direction: column;
+      align-items: center;
+   }
    // .calculate-basket__item
    &__item {
       flex: 0 0 530px;
@@ -170,7 +196,6 @@
    }
    // .calculate-basket__title
    &__title {
-      color: $blackColor;
       margin-right: rem(31);
    }
    // .calculate-basket__line
@@ -270,7 +295,6 @@
    }
    // .code-basket__title
    &__title {
-      color: $blackColor;
       margin-right: rem(31);
    }
    // .code-basket__line
@@ -318,6 +342,9 @@
    &__item {
       flex: 1 1 640px;
       padding-left: rem(50);
+      @media (max-width: em(1200)){
+         flex: 0 1 auto;
+      }
    }
    // .calculate-totals__wrapper
    &__wrapper {
@@ -328,7 +355,6 @@
    }
    // .calculate-totals__title
    &__title {
-      color: $blackColor;
    }
    // .calculate-totals__line
    &__line {

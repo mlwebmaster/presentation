@@ -25,9 +25,13 @@
    margin-bottom: rem(36);
    // .main-top__lable
    &__lable {
+      flex: 1 0 auto;
       display: flex;
       padding: rem(17) rem(40);
       background: $orangeColor;
+      @media (max-width:$mobile){
+          justify-content: center; 
+      }
    }
    // .main-top__lable-icon
    &__lable-icon {
@@ -46,6 +50,9 @@
    }
 }
 .menu-main-top {
+   @media (max-width:$mobile){
+       display: none; 
+   }
    // .menu-main-top__body
    &__body {
    }
@@ -80,7 +87,7 @@
 }
 .cards-top {
    display: flex;
-   //justify-content: space-between;
+   justify-content: center;
    margin: 0 -17px;
    flex-wrap: wrap;
    // .cards-top__item
@@ -88,6 +95,7 @@
       padding: 0 17px;
       display: flex;
       flex-direction: column;
+      margin-bottom: rem(30);
    }
    // .cards-top__image
    &__image {

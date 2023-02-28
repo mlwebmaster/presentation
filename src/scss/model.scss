@@ -11,9 +11,11 @@
 .cards-model {
    display: flex;
    padding-top: rem(20);
-   //justify-content: space-between;
    margin: 0 -12px;
    flex-wrap: wrap;
+   @media (max-width:$mobile){
+       justify-content: center; 
+   }
    // .cards-model__item
    &__item {
       padding: 0 12px;
@@ -90,6 +92,14 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   @media (max-width:$mobile){
+       justify-content: center; 
+       gap: 20px;
+   }
+   @media (max-width:$mobileSmall){
+       flex-direction: column;
+       flex-direction: column-reverse;
+   }
    // .nav-model__more
    &__more {
       display: flex;
@@ -111,6 +121,13 @@
       display: flex;
       align-items: center;
       gap: rem(24);
+      @media (max-width: em(1200)){
+           flex: 1 0 auto;
+           justify-content: center;
+      }
+      @media (max-width:$mobile){
+         flex: 0 0 auto;
+      }
    }
 }
 .nav-mode {

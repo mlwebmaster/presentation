@@ -17,11 +17,18 @@
    // .contactus__body
    &__body {
       display: flex;
+      @media (max-width:$tablet){
+         flex-direction: column;
+      }
    }
    // .contactus__content
    &__content {
-      flex: 1 1 auto;
-      padding-right: rem(100);
+      flex: 0 1 auto;
+      padding-right: rem(40);
+      max-width: rem(540);
+      @media (max-width:$tablet){
+         padding-right: 0;
+      }
    }
    // .contactus__text
    &__text {
@@ -71,7 +78,7 @@
    &__info {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      @include adaptiveValue("font-size", 20, 16);
       line-height: 115%;
       color: $grayColor;
       margin-bottom: rem(20);
@@ -110,6 +117,12 @@
    }
    // .contactus__social
    &__social {
+      @media (max-width:$tablet){
+         @include adaptiveValue("margin-bottom", 60, 40);
+      }
+      @media (max-width:$mobile){
+         text-align: center; 
+      }
    }
    // .contactus__social-linkedin
    &__social-linkedin {
@@ -129,22 +142,24 @@
 .lable-contactus {
    font-style: normal;
    font-weight: 700;
-   font-size: 20px;
+   @include adaptiveValue("font-size", 20, 16);
    line-height: 100%;
    color: $grayColor;
 }
 .text-contactus {
    font-style: normal;
    font-weight: 400;
-   font-size: 20px;
+   @include adaptiveValue("font-size", 20, 16);
    line-height: 100%;
    color: $grayColor;
 }
 .form-contactus {
-   flex: 0 0 570px;
+   margin: 0 auto;
    background: $blueColor;
    padding: 36px 55px 20px 45px;
    color: $whiteColor;
+   @include adaptiveValue("width", 570, 290);
+
    // .form-contactus__body
    &__body {
    }
@@ -152,7 +167,7 @@
    &__title {
       font-style: normal;
       font-weight: 500;
-      font-size: 32px;
+      @include adaptiveValue("font-size", 32, 18);
       line-height: 122%;
       margin-bottom: rem(26);
    }
@@ -190,7 +205,6 @@
       background: $whiteColor;
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
       line-height: 121%;
       text-align: center;
       text-transform: uppercase;
@@ -200,6 +214,7 @@
       border-radius: 4px;
       transition: color 0.3s ease 0s;
       margin-bottom: rem(18);
+      @include adaptiveValue("font-size", 24, 16);
       @media (any-hover: hover){
          &:hover{
             color: $orangeColor;
@@ -210,9 +225,9 @@
    &__text {
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
       line-height: 121%;
       text-align: center;
+      @include adaptiveValue("font-size", 14, 12);
    }
 }
 .item-name {
@@ -274,27 +289,33 @@
       content: "";
       background: url('@img/contactus/new.svg') no-repeat;
       position: absolute;
-      top: 20px;
+      @include adaptiveValue("top", 20, 7);
       left: 15px;
-      //transform: translate(0px, -50%);
       width: 20px;
       height: 20px;
    }
 
 }
 .input-form {
+   display: flex;
+   align-items: center;
    outline: none;
-   height: rem(65);
-   padding: rem(20) rem(20) rem(20) rem(40);
+   //height: rem(65);
+   padding-left: rem(40);
+   @include adaptiveValue("padding-top", 20, 8);
+   @include adaptiveValue("padding-bottom", 20, 8);
+   @include adaptiveValue("padding-right", 20, 8);
    width: 100%;
    border: 1px solid $whiteColor;
    border-radius: 4px;
    background: $blueColor;
    caret-color: $whiteColor;
    color: $whiteColor;
+   @include adaptiveValue("font-size", 16, 12);
 }
 .input-form::placeholder {
    color: $whiteColor;
+   @include adaptiveValue("font-size", 16, 12);
 }
 ._form-focus {
    background: $inputColor;

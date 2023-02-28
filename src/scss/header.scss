@@ -3,13 +3,21 @@
    background: $blueColor;
    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
    backdrop-filter: blur(3px);
+   @media (max-width: $mobile){
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+ }
    // .header__top
    &__top {
       background: $orangeColor;
       font-family: 'Jost';
       font-style: normal;
       font-weight: 700;
-      font-size: 20px;
+      //font-size: 20px;
+      @include adaptiveValue("font-size", 20, 14);
       line-height: 91.9%;
       text-transform: uppercase;
       text-align: center;
@@ -30,11 +38,20 @@
    &__logo {
       flex: 0 0 35px;
       margin-right: rem(83);
+      @media (max-width:$mobile){
+          margin-right: 0;
+          @include adaptiveValue("margin-left", 300, 20); 
+          flex: 0 0 auto;
+      }
    }
    // .header__contacts
    &__contacts {
       flex: 1 0 530px;
       white-space: nowrap;
+      margin-right: rem(10);
+      @media (max-width:$mobile){
+          display: none; 
+      }
    }
    // .header__phone
    &__phone {
@@ -79,6 +96,9 @@
       text-align: right;
       margin-right: rem(40);
       transition: color 0.3s ease 0s;
+      @media (max-width:$mobile){
+         display: none; 
+     }
       &:hover{
          color: $orangeColor;
       }
@@ -88,10 +108,7 @@
    }
 }
 
-
-
 //Burger
-/*
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -112,7 +129,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: $whiteColor;
 		}
 		&::before {
 			top: 0;
@@ -141,4 +158,4 @@
 		}
 	}
 }
-*/
+

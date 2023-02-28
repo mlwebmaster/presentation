@@ -144,10 +144,16 @@
             <div class="geodesy__price price-geodesy">
                <div data-spollers class="price-geodesy__spollers spollers">
                   <div class="price-geodesy__item  spollers__item ">
-                     <button type="button" data-spoller class="price-geodesy__title title-h3">
+                     <button type="button" data-spoller class="price-geodesy__title title-h3 _spoller-active">
                         Price
                      </button>
-                     <div class="price-geodesy__body spollers__body">Контент для Price</div>
+                     <div class="price-geodesy__body spollers__body">                        
+                        <div class="price-geodesy__inputs">
+                           <input type="number" min="500" max="10000" class="price-geodesy__input" value="500" id="input0">
+                           <input type="number" min="500" max="10000" class="price-geodesy__input" value="10000" id="input1">
+                        </div>
+                        <div class="price-geodesy__slider" id="range-slider"></div>
+                      </div>
                   </div>
                </div>
             </div>

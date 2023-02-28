@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230225214958">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230228223503">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 			<div class="header__top">promotional discounts up to 70%</div>
 			<div class="header__container">
 				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<a href="index.html" class="header__logo">
 						<img src="img/header/logo.svg" alt="Logo">
 					</a>
@@ -41,25 +42,165 @@
 							<h1 class="search__tagline"><span>S</span>mith</br> <span>s</span>urveying</br> <span>e</span>quipment</h1>
 							<div class="search__desc">Equipped to meet your goals</div>
 						</div>
-						<div class="search__form form-search">
+						<div data-da=".search__container,767.98" class="search__form form-search">
 							<form action="#" class="form-search__item form">
 								<picture><source srcset="img/search/search.webp" type="image/webp"><img src="img/search/search.png" alt="Search"></picture>
 								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="form-search__input">
 							</form>
 							<button type="submit" class="form-search__button">Search</button>
 						</div>
-						<div class="search__cart cart-search">
+						<div data-da=".header__body,767.98" class="search__cart cart-search">
 							<a href="#!" class="cart-search__text">My cart</a>
 							<a href="#!" class="cart-search__image">
-								<picture><source srcset="img/search/cart.webp" type="image/webp"><img src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart.webp" type="image/webp"><img class="cart-search__image-1" src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart2.webp" type="image/webp"><img class="cart-search__image-2" src="img/search/cart2.png" alt="Cart"></picture>
 								<span>2</span>
 							</a>
+						</div>
+						<div class="search__special-offers special-offers">
+							<div class="special-offers__text">Special<br>offers</div>
+							<div class="special-offers__image">
+								<picture><source srcset="img/search/percent.webp" type="image/webp"><img src="img/search/percent.png" alt="Image"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- MENU-HIDDEN -->
+			<div class="page__manu-hidden menu-hidden">
+				<div class="menu-hidden__container">
+					<div class="main__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="category.html" class="menu__link">Surveying equipment</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Survey accesories</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Distance measuring</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Detection & safety</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Used equipment</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="main__social">
+							<a href="#!" class="main__social-instagram">
+								<picture><source srcset="img/main/instagram.webp" type="image/webp"><img src="img/main/instagram.png" alt="Image"></picture>
+							</a>
+							<a href="#!" class="main__social-viber">
+								<picture><source srcset="img/main/viber.webp" type="image/webp"><img src="img/main/viber.png" alt="Image"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BASKET-HIDDEN -->
+			<section class="page__basket basket-mobile basket-hidden">
+				<div class="basket-mobile__container">
+					<div class="basket__header">
+						<h2 class="basket-mobile__title title-h2">Basket</h2>
+						<div class="basket-mobile__breadcrumbs">
+							<a href="#!" class="basket-mobile__breadcrumbs-link">Home</a> / <span>Basket</span>
+						</div>
+					</div>
+					<div class="basket-mobile__amount amount-basket-mobile">
+						<h2 class="amount-basket-mobile__title title-h2">You Have 2 Item (s) In Your Cart</h2>
+						<div class="amount-basket-mobile__image">
+							<picture><source srcset="img/basket/image-2.webp" type="image/webp"><img src="img/basket/image-2.jpg" alt="Image"></picture>
+						</div>
+						<div class="amount-basket-mobile__desc">
+							<h2 class="amount-basket-mobile__title-2 title-h2">DATUM DPL5 PLUS LINE LASER</h2>
+						</div>
+						<div class="amount-basket-mobile__price-lable">Price</div>
+						<div class="amount-basket-mobile__price">£2,350.00</div>
+						<div class="amount-basket-mobile__quantity-lable">Quantity</div>
+						<div class="amount-basket-mobile__quantity">
+							<button type="submit" class="amount-basket-mobile__button _minus">-</button>
+							<div class="amount-basket-mobile__thing">1</div>
+							<button type="submit" class="amount-basket-mobile__button _plus">+</button>
+						</div>
+						<div class="amount-basket-mobile__subtotal-label">Subtotal</div>
+						<div class="amount-basket-mobile__subtotal">£2,350.00</div>
+					</div>
+					<div class="basket-mobile__calculate calculate-basket-mobile">
+						<div class="calculate-basket-mobile__wrapper">
+							<div class="calculate-basket-mobile__block block-calculate-bm">
+								<h2 class="block-calculate-bm__title title-h2">Calculate shipping</h2>
+								<div class="block-calculate-bm__body-form form-calculate-bm">
+									<form action="#!" class="form-calculate-bm__form">
+										<div class="form-calculate-bm__item">
+											<input type="text" class="form-calculate-bm__input" placeholder="Subject">
+										</div>
+										<div class="form-calculate-bm__item">
+											<input type="text" class="form-calculate-bm__input" placeholder="County">
+										</div>
+										<div class="form-calculate-bm__item">
+											<input type="text" class="form-calculate-bm__input" placeholder="Town\City">
+										</div>
+										<div class="form-calculate-bm__item">
+											<input type="text" class="form-calculate-bm__input" placeholder="Postcode">
+										</div>
+										<button type="submit" class="form-calculate-bm__button">Update Totals</button>
+									</form>
+								</div>
+							</div>
+							<div class="calculate-basket-mobile__block block-calculate-bm">
+								<h2 class="block-calculate-bm__title title-h2">Have A Promotional Code?</h2>
+								<div class="block-calculate-bm__body-form form-calculate-bm">
+									<form action="#!" class="form-calculate-bm__form">
+										<div class="form-calculate-bm__item">
+											<input type="text" class="form-calculate-bm__input" placeholder="Coupon code">
+										</div>
+										<button type="submit" class="form-calculate-bm__button">Apply coupon</button>
+									</form>
+								</div>
+							</div>
+							<div class="calculate-basket-mobile__block block-calculate-bm">
+								<h2 class="block-calculate-bm__title title-h2">Basket totals</h2>
+								<div class="block-calculate-bm__inner">
+									<div class="block-calculate-bm__lable">Subtotal</div>
+									<div class="block-calculate-bm__price">£2,350.00</div>
+								</div>
+								<div class="block-calculate-bm__inner">
+									<div class="block-calculate-bm__lable">Shipping</div>
+									<div class="block-calculate-bm__inner-min inner-min-bm">
+										<div class="inner-min-bm__text">
+											<p>Shipping options will be updated during checkout</p>
+										</div>
+										<div class="inner-min-bm__radio-inner">
+											<input id="freeShipping" type="radio" value="free" name="shipping" class="inner-min-bm__radio">
+											<label for="freeShipping" class="inner-min-bm__radio-label">Free shipping</label>
+										</div>
+										<div class="inner-min-bm__radio-inner">
+											<input id="payShipping" type="radio" value="pay" name="shipping" class="inner-min-bm__radio">
+											<label for="payShipping" class="inner-min-bm__radio-label">Flat rate: £10.00</label>
+										</div>
+									</div>
+								</div>
+								<div class="block-calculate-bm__inner">
+									<div class="block-calculate-bm__lable">VAT</div>
+									<div class="block-calculate-bm__price">£45.00</div>
+								</div>
+								<div class="block-calculate-bm__inner">
+									<div class="block-calculate-bm__lable">Total</div>
+									<div class="block-calculate-bm__price">£270.00</div>
+								</div>
+								<button type="submit" class="form-calculate-bm__button">Update basket</button>
+								<button type="submit" class="form-calculate-bm__button">Proceed to checkout</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
 			<!-- BASKET -->
-			<section class="page__basket basket">
+			<section class="page__basket basket basket-visible">
 				<div class="basket__container">
 					<div class="basket__header">
 						<h2 class="basket__title title-h2">Basket</h2>
@@ -227,7 +368,7 @@
 							<a href="mailto:simon@smithsurveyingequipment.co.uk" class="contacts-main-footer__email"><span>E-mail:</span></br> simon@smithsurveyingequipment.co.uk</a>
 						</div>
 					</div>
-					<div class="footer__info info-footer">
+					<div data-da=".footer__container,991.98,1" class="footer__info info-footer">
 						<div class="info-footer__title title-footer">Company info</div>
 						<div class="info-footer__text">Smith Surveying Equipment Limited 10-12 Empringham Street Hull, East Yorkshire,HU9 1RP United Kingdom</div>
 						<div class="info-footer__data">
@@ -299,7 +440,7 @@
 
 
 	</div>
-	<script src="js/app.min.js?_v=20230225214958"></script>
+	<script src="js/app.min.js?_v=20230228223503"></script>
 </body>
 
 </html>

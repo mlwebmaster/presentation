@@ -10,21 +10,40 @@
       display: flex;
       justify-content: space-between;
       margin: 0 -30px;
+      @media (max-width:$mobile){
+          flex-direction: column; 
+          align-items: center;
+      }
    }
    // .footer__main
    &__main {
       flex: 0 1 percent(340, 1170);
       padding: 0 30px;
+      @media (max-width:$tablet){
+         flex: 1 0 33.333%;
+      }
+      @media (max-width:$mobile){
+         max-width: rem(350); 
+      }
    }
    // .footer__info
    &__info {
       flex: 0 1 percent(320, 1170);
-      padding: 0 30px;
+      @include adaptiveValue("padding-left", 30, 15, 1, 1170, 991.98);
+      @include adaptiveValue("padding-right", 30, 15, 1, 1170, 991.98);
+      @media (max-width:$tablet){
+         padding-top: rem(30);
+      }
+      
    }
    // .footer__navigation
    &__navigation {
       flex: 1 1 percent(380, 1170);
-      padding: 0 30px;
+      padding-right: rem(30);
+      @include adaptiveValue("padding-left", 30, 15, 1, 1170, 991.98);
+      @media (max-width:$mobile){
+         padding: 0 rem(15);
+      }
    }
    // .footer__copy
    &__copy {
@@ -33,8 +52,12 @@
       font-weight: 700;
       font-size: 12px;
       line-height: 23px;
-      color: #070707;
+      color: $blackColor;
       padding-bottom: rem(58);
+      @media (max-width:$tablet){
+         color: $orangeColor;
+         padding-top: rem(20);
+      }
    }
 }
 .main-footer {
@@ -145,18 +168,32 @@
    font-size: 16px;
    line-height: 225%;
    color: $blackColor;
-   &:not(:last-child) {
-      margin-bottom: rem(20);
+   margin-bottom: rem(20);
+   @media (max-width:$mobile){
+      margin-bottom: 0; 
    }
+      
 }
 // .navigation-footer
 .navigation-footer {
    display: flex;
    justify-content: space-between;
+   @media (max-width:$mobileSmall){
+       flex-direction: column; 
+   }
    // .navigation-footer__shop
    &__shop {
       flex: 1 1 50%;
-      padding-left: rem(45);
+      @include adaptiveValue("padding-left", 45, 15, 1, 1170, 991.98);
+      @media (max-width:$tablet){
+         padding-right: rem(30);
+      }
+      @media (max-width:$mobileSmall){
+         padding-right: 0;
+         &:not(:last-child) {
+            margin-bottom: rem(30);
+         }
+      }
    }
    // .navigation-footer__title
    &__title {
@@ -164,7 +201,7 @@
    // .navigation-footer__menu
    &__menu {
       flex: 1 1 50%;
-      padding-left: rem(45);
+      @include adaptiveValue("padding-left", 45, 15, 1, 1170, 991.98);
    }
 }
 .shop-footer {
@@ -189,6 +226,7 @@
       font-size: 16px;
       line-height: 187%;
       color: $grayColor;
+      white-space: nowrap;
       transition: color 0.3s ease 0s;
       @media (any-hover: hover){
          &:hover{

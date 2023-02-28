@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230225214958">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230228223503">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 			<div class="header__top">promotional discounts up to 70%</div>
 			<div class="header__container">
 				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<a href="index.html" class="header__logo">
 						<img src="img/header/logo.svg" alt="Logo">
 					</a>
@@ -41,23 +42,64 @@
 							<h1 class="search__tagline"><span>S</span>mith</br> <span>s</span>urveying</br> <span>e</span>quipment</h1>
 							<div class="search__desc">Equipped to meet your goals</div>
 						</div>
-						<div class="search__form form-search">
+						<div data-da=".search__container,767.98" class="search__form form-search">
 							<form action="#" class="form-search__item form">
 								<picture><source srcset="img/search/search.webp" type="image/webp"><img src="img/search/search.png" alt="Search"></picture>
 								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="form-search__input">
 							</form>
 							<button type="submit" class="form-search__button">Search</button>
 						</div>
-						<div class="search__cart cart-search">
+						<div data-da=".header__body,767.98" class="search__cart cart-search">
 							<a href="#!" class="cart-search__text">My cart</a>
 							<a href="#!" class="cart-search__image">
-								<picture><source srcset="img/search/cart.webp" type="image/webp"><img src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart.webp" type="image/webp"><img class="cart-search__image-1" src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart2.webp" type="image/webp"><img class="cart-search__image-2" src="img/search/cart2.png" alt="Cart"></picture>
 								<span>2</span>
 							</a>
+						</div>
+						<div class="search__special-offers special-offers">
+							<div class="special-offers__text">Special<br>offers</div>
+							<div class="special-offers__image">
+								<picture><source srcset="img/search/percent.webp" type="image/webp"><img src="img/search/percent.png" alt="Image"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- MENU-HIDDEN -->
+			<div class="page__manu-hidden menu-hidden">
+				<div class="menu-hidden__container">
+					<div class="main__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="category.html" class="menu__link">Surveying equipment</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Survey accesories</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Distance measuring</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Detection & safety</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Used equipment</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="main__social">
+							<a href="#!" class="main__social-instagram">
+								<picture><source srcset="img/main/instagram.webp" type="image/webp"><img src="img/main/instagram.png" alt="Image"></picture>
+							</a>
+							<a href="#!" class="main__social-viber">
+								<picture><source srcset="img/main/viber.webp" type="image/webp"><img src="img/main/viber.png" alt="Image"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- OFFERS -->
 			<section class="page__geodesy geodesy">
 				<div class="geodesy__container">
@@ -204,10 +246,16 @@
 							<div class="geodesy__price price-geodesy">
 								<div data-spollers class="price-geodesy__spollers spollers">
 									<div class="price-geodesy__item  spollers__item ">
-										<button type="button" data-spoller class="price-geodesy__title title-h3">
+										<button type="button" data-spoller class="price-geodesy__title title-h3 _spoller-active">
 											Price
 										</button>
-										<div class="price-geodesy__body spollers__body">Контент для Price</div>
+										<div class="price-geodesy__body spollers__body">
+											<div class="price-geodesy__inputs">
+												<input type="number" min="500" max="10000" class="price-geodesy__input" value="500" id="input0">
+												<input type="number" min="500" max="10000" class="price-geodesy__input" value="10000" id="input1">
+											</div>
+											<div class="price-geodesy__slider" id="range-slider"></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -436,7 +484,7 @@
 							<a href="mailto:simon@smithsurveyingequipment.co.uk" class="contacts-main-footer__email"><span>E-mail:</span></br> simon@smithsurveyingequipment.co.uk</a>
 						</div>
 					</div>
-					<div class="footer__info info-footer">
+					<div data-da=".footer__container,991.98,1" class="footer__info info-footer">
 						<div class="info-footer__title title-footer">Company info</div>
 						<div class="info-footer__text">Smith Surveying Equipment Limited 10-12 Empringham Street Hull, East Yorkshire,HU9 1RP United Kingdom</div>
 						<div class="info-footer__data">
@@ -508,7 +556,7 @@
 
 
 	</div>
-	<script src="js/app.min.js?_v=20230225214958"></script>
+	<script src="js/app.min.js?_v=20230228223503"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230225214958">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230228223503">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 			<div class="header__top">promotional discounts up to 70%</div>
 			<div class="header__container">
 				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<a href="index.html" class="header__logo">
 						<img src="img/header/logo.svg" alt="Logo">
 					</a>
@@ -41,23 +42,64 @@
 							<h1 class="search__tagline"><span>S</span>mith</br> <span>s</span>urveying</br> <span>e</span>quipment</h1>
 							<div class="search__desc">Equipped to meet your goals</div>
 						</div>
-						<div class="search__form form-search">
+						<div data-da=".search__container,767.98" class="search__form form-search">
 							<form action="#" class="form-search__item form">
 								<picture><source srcset="img/search/search.webp" type="image/webp"><img src="img/search/search.png" alt="Search"></picture>
 								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search" class="form-search__input">
 							</form>
 							<button type="submit" class="form-search__button">Search</button>
 						</div>
-						<div class="search__cart cart-search">
+						<div data-da=".header__body,767.98" class="search__cart cart-search">
 							<a href="#!" class="cart-search__text">My cart</a>
 							<a href="#!" class="cart-search__image">
-								<picture><source srcset="img/search/cart.webp" type="image/webp"><img src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart.webp" type="image/webp"><img class="cart-search__image-1" src="img/search/cart.png" alt="Cart"></picture>
+								<picture><source srcset="img/search/cart2.webp" type="image/webp"><img class="cart-search__image-2" src="img/search/cart2.png" alt="Cart"></picture>
 								<span>2</span>
 							</a>
+						</div>
+						<div class="search__special-offers special-offers">
+							<div class="special-offers__text">Special<br>offers</div>
+							<div class="special-offers__image">
+								<picture><source srcset="img/search/percent.webp" type="image/webp"><img src="img/search/percent.png" alt="Image"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- MENU-HIDDEN -->
+			<div class="page__manu-hidden menu-hidden">
+				<div class="menu-hidden__container">
+					<div class="main__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="category.html" class="menu__link">Surveying equipment</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Survey accesories</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Distance measuring</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Detection & safety</a>
+								</li>
+								<li class="menu__item">
+									<a href="#!" class="menu__link">Used equipment</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="main__social">
+							<a href="#!" class="main__social-instagram">
+								<picture><source srcset="img/main/instagram.webp" type="image/webp"><img src="img/main/instagram.png" alt="Image"></picture>
+							</a>
+							<a href="#!" class="main__social-viber">
+								<picture><source srcset="img/main/viber.webp" type="image/webp"><img src="img/main/viber.png" alt="Image"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- CONTACTUS -->
 			<section class="page__contactus contactus">
 				<div class="contactus__container">
@@ -121,11 +163,11 @@
 									<input type="text" name="name" class="form-contactus__name input-form" placeholder="John">
 								</div>
 								<div class="form-contactus__item item-email">
-									<input type="text" name="email" class="form-contactus__email input-form" placeholder="E-mail adress (required)">
+									<input type="text" name="email" class="form-contactus__email input-form" placeholder="E-mail adress">
 								</div>
 								<div class="form-contactus__required">The field is required</div>
 								<div class="form-contactus__item item-phone">
-									<input type="text" name="phone" class="form-contactus__phone input-form" placeholder="+380 976 96 96">
+									<input type="text" name="phone2" class="form-contactus__phone input-form" placeholder="+380 976 96 96">
 								</div>
 								<div class="form-contactus__item item-subject">
 									<input type="text" name="subject" class="form-contactus__subject input-form" placeholder="Subject">
@@ -134,7 +176,9 @@
 									<textarea name="message" data-autoheight class="form-contactus__message input-form" placeholder="Enter your message here"></textarea>
 								</div>
 								<button type="submit" class="form-contactus__button">Send</button>
-								<div class="form-contactus__text">One or more fields have an error.<br> Please check and try again.</div>
+								<div class="form-contactus__text">
+									One or more fields have an error.<br> Please check and try again.
+								</div>
 							</form>
 						</div>
 					</div>
@@ -158,7 +202,7 @@
 							<a href="mailto:simon@smithsurveyingequipment.co.uk" class="contacts-main-footer__email"><span>E-mail:</span></br> simon@smithsurveyingequipment.co.uk</a>
 						</div>
 					</div>
-					<div class="footer__info info-footer">
+					<div data-da=".footer__container,991.98,1" class="footer__info info-footer">
 						<div class="info-footer__title title-footer">Company info</div>
 						<div class="info-footer__text">Smith Surveying Equipment Limited 10-12 Empringham Street Hull, East Yorkshire,HU9 1RP United Kingdom</div>
 						<div class="info-footer__data">
@@ -230,7 +274,7 @@
 
 
 	</div>
-	<script src="js/app.min.js?_v=20230225214958"></script>
+	<script src="js/app.min.js?_v=20230228223503"></script>
 </body>
 
 </html>

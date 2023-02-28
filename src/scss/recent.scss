@@ -34,11 +34,13 @@
    display: flex;
    margin: 0 -17px;
    flex-wrap: wrap;
+   justify-content: center;
    // .cards-recent__item
    &__item {
       padding: 0 17px;
       display: flex;
       flex-direction: column;
+      margin-bottom: rem(30);
    }
    // .cards-recent__image
    &__image {

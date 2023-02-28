@@ -30,15 +30,26 @@
    &__list {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width:$mobile){
+          justify-content: center; 
+      }
+      @media (max-width: em(360)){
+           display: inline-block;
+      }
    }
    // .menu-welcome__item
    &__item {
       padding-right: rem(38);
       padding-left: rem(38);
-      border-left:1px solid $lightOrangeColor;
+      border-left: 1px solid $lightOrangeColor;
       &:first-child {
-         border: none;
+         border-left: none;
          padding-left: 0;
+      }
+      @media (max-width:$mobile){
+         border-left: none;
+         margin: 5px 15px; 
+         padding: 0;
       }
    }
    // .menu-welcome__link
@@ -54,6 +65,9 @@
          &:hover{
             opacity: 1;
          }
+      }
+      @media (max-width:$mobile){
+         border-bottom: 1px solid $lightOrangeColor; 
       }
    }
 }

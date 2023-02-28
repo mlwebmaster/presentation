@@ -8,16 +8,31 @@
    &__body {
       display: flex;
       padding-top: rem(40);
-      margin-bottom: rem(100);
+      margin-bottom: rem(80);
+      @media (max-width:$mobile){
+          flex-direction: column; 
+          align-items: center;
+          margin-bottom: rem(40);
+      }
    }
    // .datumdpl5__block-image
    &__block-image {
+      @media (max-width:$mobile){
+          padding-bottom: rem(30); 
+      }
    }
    // .datumdpl5__image
    &__image {
+      flex: 0 1 auto;
       position: relative;
       margin-right: rem(41);
       margin-bottom: rem(20);
+      @media (max-width:$mobile){
+         margin-right: 0; 
+      }
+      img {
+         max-width: 100%;
+      }
       &::before {
          content: "";
          position: absolute;
@@ -45,13 +60,23 @@
       gap: rem(10);
    }
    // .datumdpl5__image-mini-1
-   &__image-mini-1 {
+   &__image-mini-1 { 
+      img {
+         width: 50px;
+      }     
    }
    // .datumdpl5__image-mini-2
-   &__image-mini-2 {
+   &__image-mini-2 {      
    }
    // .datumdpl5__image-mini-3
    &__image-mini-3 {
+   }
+   &__image-mini-1,
+   &__image-mini-2,
+   &__image-mini-3 {
+      img {
+         width: 50px;
+      }
    }
    // .datumdpl5__content
    &__content {
@@ -80,11 +105,13 @@
    }
    // .content-datumdpl5__title
    &__title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 122%;
-      color: $blackColor;
+      @media (min-width:$mobile){
+         font-style: normal;
+         font-weight: 700;
+         font-size: 32px;
+         line-height: 122%;
+         color: $blackColor; 
+      }
       margin-bottom: rem(10);
    }
    // .content-datumdpl5__button
@@ -126,6 +153,10 @@
       align-items: center;
       gap: rem(20);
       margin-bottom: rem(20);
+      @media (max-width:$mobile){
+          justify-content: center; 
+          flex-direction: column;
+      }
    }
    // .content-datumdpl5__value
    &__value {
@@ -134,6 +165,7 @@
       font-size: 32px;
       line-height: 100%;
       color: $dark2GrayColor;
+      @include adaptiveValue("font-size", 32, 24);
    }
    // .content-datumdpl5__amount
    &__amount {
@@ -156,7 +188,6 @@
    }
    // .content-datumdpl5__buy-button-wrapper
    &__buy-button-wrapper {
-      margin-bottom: rem(26);
    }
    // .content-datumdpl5__buy-button-image
    &__buy-button-image {
@@ -174,6 +205,13 @@
       padding: rem(16) rem(53);
       display: flex;
       gap:rem(11);
+      @media (max-width:$mobile){
+          margin-bottom: rem(20); 
+      }
+      @media (max-width:$mobileSmall){
+          width: 100%;
+          justify-content: center; 
+      }
    }
    // .content-datumdpl5__bank-card
    &__bank-card {

@@ -14,7 +14,7 @@
       font-weight: 700;
       font-size: 36px;
       line-height: 122%;
-      color: $blackColor;
+      //color: $blackColor;
       margin-bottom: rem(15);
    }
    // .article__breadcrumbs
@@ -26,9 +26,15 @@
    // .article__wrapper
    &__wrapper {
       display: flex;
+      @media (max-width:$tablet){
+         display: block;
+      }
    }
    // .article__body
    &__body {
+      @media (max-width:$tablet){
+         padding-bottom: rem(40);
+      }
    }
    // .article__content
    &__content {
@@ -41,6 +47,9 @@
    // .article__image
    &__image {
       margin-bottom: rem(25);
+      img {
+         max-width: 100%;
+      }
    }
    // .article__text-2
    &__text-2 {
@@ -51,24 +60,31 @@
    &__socials {
       display: flex;
       align-items: center;
-      margin-bottom: rem(76);
+      flex-wrap: wrap;
+
    }
    // .article__social-item
    &__social-item {
       display: flex;
       align-items: center;
-      gap: rem(7);
-      padding: 0 rem(8);
+      gap: rem(10);
+      padding: 0 rem(7);
       border-left: 1px solid $lineVertColor;
       &:first-child {
          border: none;
       }
+      @media (max-width:$mobile){
+         border-left: none;
+         margin-bottom: rem(20);
+      }
+      margin-bottom: rem(30);
    }
    // .article__socials-icon
    &__socials-icon {
    }
    // .article__socials-text
    &__socials-text {
+      @include adaptiveValue("font-size", 16, 14);
    }
    // .article__button
    &__button {
@@ -86,11 +102,20 @@
       font-size: 24px;
       line-height: 122%;
       color: $blackColor;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            color: $orangeColor;
+         }
+      }
    }
    // .article__side
    &__side {
       flex: 0 0 rem(200);
       padding: 0 rem(44);
+      @media (max-width:$tablet){
+         padding: 0 rem(15);
+      }
    }
    // .article__cards
    &__cards {
@@ -100,6 +125,11 @@
    display: flex;
    flex-direction: column;
    gap: rem(20);
+   @media (max-width:$tablet){
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
    // .cards-article__title
    &__title {
       font-style: normal;
@@ -109,6 +139,9 @@
       text-transform: uppercase;
       color: $orangeColor;
       padding-top: rem(50);
+      @media (max-width:$tablet){
+         display: none;
+      }
    }
    // .cards-article__item
    &__item {
@@ -178,3 +211,4 @@
       color: $lightGrayColor;
    }
 }
+

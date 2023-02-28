@@ -20,10 +20,14 @@
    // .about__text
    &__text {
       padding-bottom: rem(20);
+      @include adaptiveValue("font-size", 16, 14);
    }
    // .about__image
    &__image {
       padding: rem(40) 0;
+      img {
+         width: 100%;
+      }
    }
    // .about__menu
    &__menu {
@@ -37,6 +41,12 @@
    &__list {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width:$mobile){
+         justify-content: center; 
+     }
+     @media (max-width: em(360)){
+          display: inline-block;
+     }
    }
    // .menu-about__item
    &__item {
@@ -46,6 +56,11 @@
       &:first-child {
          border: none;
          padding-left: 0;
+      }
+      @media (max-width:$mobile){
+         border-left: none;
+         margin: 5px 15px; 
+         padding: 0;
       }
    }
    // .menu-about__link
@@ -60,6 +75,9 @@
          &:hover{
             color: $orangeColor;
          }
+      }
+      @media (max-width:$mobile){
+         border-bottom: 1px solid $lightOrangeColor; 
       }
    }
 }

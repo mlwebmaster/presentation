@@ -1,6 +1,9 @@
 /* NEWS */
 .news {
    padding-bottom: rem(80);
+   @media (max-width:$mobile){
+      padding-bottom: 0;
+   }
    // .news__container
    &__container {
    }
@@ -25,10 +28,21 @@
       &:not(:last-child) {
          border-bottom: 1px solid $lightLightGrayColor;
       }
+      @media (max-width:$mobile){
+          flex-direction: column; 
+          align-items: center;
+      }
    }
    // .news__image
    &__image {
       margin-right: rem(40);
+      img {
+         max-width: 100%;
+      }
+      @media (max-width:$mobile){
+         margin-right: 0;
+         margin-bottom: rem(40);
+      }
    }
    // .news__date
    &__date {

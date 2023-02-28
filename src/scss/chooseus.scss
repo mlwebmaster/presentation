@@ -1,6 +1,9 @@
 /* CHOOSEUS */
 .chooseus {
    padding-bottom: rem(80);
+   @media (max-width:$mobile){
+       padding-bottom: rem(10); 
+   }
    // .chooseus__container
    &__container {
    }
@@ -14,6 +17,10 @@
    &__content {
       display: flex;
       justify-content: space-between;
+      @media (max-width:$mobile){
+          flex-direction: column; 
+          align-items: center;
+      }
    }
    // .chooseus__text
    &__text {
@@ -34,5 +41,13 @@
    }
    // .chooseus__image
    &__image {
+      margin-left: rem(30);
+      @media (max-width:$mobile){
+          padding-top: rem(30);
+          margin-left: 0;
+          img {
+            width: 100%;
+          } 
+      }
    }
 }
