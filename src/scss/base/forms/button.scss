@@ -8,17 +8,18 @@
    color: $whiteColor;
    font-style: normal;
    font-weight: 500;
-   font-size: 14px;
    line-height: 130%;
    align-items: center;
    gap: rem(5);
    border-radius: 4px;
+   white-space: nowrap;
    transition: background 0.3s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
          background: $hoverOrangeColor;
 		}
 	}
+   @include adaptiveValue("font-size", 14, 11);
 	&._fw {
 		width: 100%;
 	}

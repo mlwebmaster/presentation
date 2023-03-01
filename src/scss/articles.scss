@@ -7,6 +7,7 @@
    // .articles__header
    &__header {
       padding: rem(40) rem(60) rem(40) 0;
+      //display: none;
    }
    // .articles__title
    &__title {
@@ -36,12 +37,17 @@
       &:not(:last-child) {
          border-bottom: 1px solid $lightLightGrayColor;
       }
+      @media (max-width: em(720)){
+         flex-direction: column;
+         align-items: center; 
+      }
    }
    // .articles__image
    &__image {
       margin-right: rem(40);
-      img {
-         //max-width: 100%;
+      @media (max-width: em(720)){
+         margin-right: 0;
+         margin-bottom: rem(30); 
       }
    }
    // .articles__content
@@ -69,12 +75,36 @@
    // .articles__cards
    &__cards {
    }
+   // .articles__button-wrapp
+   &__button-wrapp {
+      display: flex;
+      justify-content: center;
+   }
+   // .articles__button-wrapp-2
+   &__button-wrapp-2 {
+      @media (max-width:$tablet){
+         display: flex;
+         justify-content: center;
+      }
+   }
    // .articles__button
    &__button {
-      margin-left: rem(340);
       display: flex;
       align-items: center;
-      gap: rem(7)
+      gap: rem(7);
+      padding-top: rem(25);
+      text-align: center;
+   }
+   // .articles__button-2
+   &__button-2 {
+      align-items: center;
+      gap: rem(7);
+      display: none;
+      @media (max-width:$tablet){
+         display: flex;
+         margin-left: 0;
+         padding-top: rem(25);
+      }
    }
    // .articles__button-text
    &__button-text {
@@ -102,6 +132,8 @@
    gap: rem(20);
    @media (max-width:$tablet){
       flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
    }
    // .cards-articles__title
    &__title {
@@ -133,11 +165,11 @@
       flex: 1 1 auto;
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
       line-height: 130%;
       color: $lightGrayColor;
       max-width: rem(183);
       margin-bottom: rem(14);
+      @include adaptiveValue("font-size", 16, 12);
    }
    // .cards-articles__price
    &__price {
@@ -158,9 +190,9 @@
    &__value {
       font-style: normal;
       font-weight: 600;
-      font-size: 18px;
       line-height: 130%;
       color: $orangeColor;
+      @include adaptiveValue("font-size", 18, 13.5);
    }
    // .price-articles__amount
    &__amount {

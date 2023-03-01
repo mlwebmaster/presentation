@@ -36,6 +36,10 @@
    padding-bottom: rem(42);
    border-bottom: 1px solid $borderColor;
    gap: rem(37);
+   @media (max-width: $mobile){
+      flex-direction: column; 
+      gap: rem(5);
+   }
    // .contacts-check__phone
    &__phone,
    // .contacts-check__email
@@ -46,7 +50,12 @@
       line-height: 125%;
       color: $borderFormColor;
       span {
+         font-style: normal;
+         font-weight: 500;
+         @include adaptiveValue("font-size", 16, 14);
+         line-height: 125%;
          color: $blueColor;
+         white-space: nowrap;
          transition: color 0.3s ease 0s;
          @media (any-hover: hover){
             &:hover{
@@ -63,8 +72,16 @@
    align-items: center;
    padding-bottom: rem(25);
    border-bottom: 1px solid $borderColor;
+   @media (max-width:$mobile){
+      flex-direction: column;
+      border-bottom: none; 
+   }
    // .promotional-check__title
    &__title {
+      @media (max-width:$mobile){
+         border-bottom: 1px solid $borderColor;
+         padding-bottom: rem(10);
+      }
    }
    // .promotional-check__form
    &__form {
@@ -75,14 +92,24 @@
    &__form {
       display: flex;
       align-items: center;
+      @media (max-width: em(560)){
+         flex-direction: column;
+         gap: rem(15); 
+      }
    }
    // .form-promotional__item
    &__item {
       border: 1px solid $borderFormColor;
       border-radius: 4px;
-      padding: rem(22);
+      padding-left: rem(22);
+      padding-right: rem(22);
+      @include adaptiveValue("padding-top", 22, 15);
+      @include adaptiveValue("padding-bottom", 22, 15);
       width: rem(300);
       margin-right: rem(10);
+      @media (max-width: em(560)){
+         margin-right: 0; 
+      }
    }
    // .form-promotional__input
    &__input {
@@ -109,7 +136,10 @@
       text-transform: uppercase;
       color: $whiteColor;
       background: $blueColor;
-      padding: rem(23) rem(47);
+      padding-left: rem(47);
+      padding-right: rem(47);
+      @include adaptiveValue("padding-top", 23, 15);
+      @include adaptiveValue("padding-bottom", 23, 15);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
       @media (any-hover: hover){
@@ -123,10 +153,25 @@
    padding-top: rem(50);
    display: flex;
    margin-bottom: rem(110);
+   @media (max-width:$tablet){
+      flex-direction: column;
+      align-items: center;
+   }
+   @media (max-width:$mobileSmall){
+      margin-bottom: rem(50);
+   }
    // .billing-check__details
    &__details {
       flex: 0 0 530px;
       padding-right: rem(60);
+      @media (max-width: em(1084)){
+         padding-right: rem(20);
+         flex: 0 1 500px;  
+      }
+      @media (max-width:$tablet){
+         padding-right: 0;
+         flex: 0 1 auto;
+      }
    }
    // .billing-check__deliver
    &__deliver {
@@ -142,9 +187,16 @@
    }
    // .details-billing__title
    &__title {
+      @media (max-width:$tablet){
+         margin: 0 auto;
+         padding-bottom: rem(16);
+      }
    }
    // .details-billing__line
    &__line {
+      @media (max-width:$tablet){
+         display: none; 
+      }
    }
    // .details-billing__form
    &__form {
@@ -156,6 +208,9 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      @media (max-width:$tablet){
+         padding-bottom: rem(30);
+      }
    }
    // .form-details__name
    &__name {
@@ -202,6 +257,9 @@
       display: flex;
       align-items: center;
       gap: 7px;
+      @media (max-width:$tablet){
+         justify-content: center;
+      }
    }
    // .form-details__label
    &__label {
@@ -210,6 +268,33 @@
       font-size: 12px;
       line-height: 125%;
       color: $blackColor;
+   }
+   // .form-details__button-wrapper
+   &__button-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: rem(20);
+   }
+   // .form-details__button
+   &__button {
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: $whiteColor;
+      background: $blueColor;
+      padding-left: rem(47);
+      padding-right: rem(47);
+      @include adaptiveValue("padding-top", 23, 15);
+      @include adaptiveValue("padding-bottom", 23, 15);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
    }
 }
 .item-first-details {
@@ -243,6 +328,14 @@
 }
 .deliver-billing {
    padding-left: rem(55);
+   @media (max-width: em(1084)){
+      padding-left: rem(15);
+      flex: 0 1 500px;   
+   }
+   @media (max-width:$tablet){
+      padding-left: 0;
+      flex: 0 1 auto;
+   }
    // .deliver-billing__form
    &__form {
    }
@@ -274,6 +367,9 @@
    }
    // .form-deliver__image
    &__image {
+      @media (max-width:$tablet){
+         display: none;
+      }
    }
    // .form-deliver__email
    &__email {
@@ -284,6 +380,9 @@
       border-radius: 4px;
       padding: rem(22);
       width: rem(470);
+      @media (max-width:$tablet){
+         width: 100%;
+      }
    }
    // .form-deliver__input
    &__input {
@@ -291,4 +390,33 @@
       background: $bgColor;
       outline: none;
    }
+   // .form-deliver__button-wrapper
+   &__button-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: rem(20);
+   }
+   // .form-deliver__button
+   &__button {
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 125%;
+      text-transform: uppercase;
+      color: $whiteColor;
+      background: $blueColor;
+      padding-left: rem(47);
+      padding-right: rem(47);
+      @include adaptiveValue("padding-top", 23, 15);
+      @include adaptiveValue("padding-bottom", 23, 15);
+      border-radius: 4px;
+      transition: background 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background: $blue2Color;
+         }
+      }
+   }
 }
+
+

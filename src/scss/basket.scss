@@ -427,6 +427,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blackColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
    // .subtotal__price
    &__price {
@@ -436,6 +439,9 @@
       font-size: 18px;
       line-height: 150%;
       color: $blueColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
 }
 .shipping {
@@ -450,6 +456,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blackColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
    // .shipping__inner
    &__inner {
@@ -463,6 +472,9 @@
       color: $blueColor;
       max-width: rem(257);
       margin-bottom: rem(14);
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
    // .shipping__options
    &__options {
@@ -481,6 +493,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blackColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
 }
 .vat {
@@ -498,6 +513,9 @@
       line-height: 122%;
       text-transform: uppercase;
       color: $blackColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
    // .vat__price
    &__price {
@@ -507,6 +525,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blueColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
 }
 .total {
@@ -522,6 +543,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blackColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
    // .total__price
    &__price {
@@ -531,6 +555,9 @@
       font-size: 18px;
       line-height: 122%;
       color: $blueColor;
+      @media (max-width: em(540)){
+         font-size: 14px;  
+      }
    }
 }
 
