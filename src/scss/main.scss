@@ -26,14 +26,17 @@
        }
     }
    }
+   // .main__high-block
+   &__high-block {
+   }
    // .main__social
    &__social {
       display: none;
       @media (max-width:$mobile){
-          display: flex;
-          align-items: center;
-          padding-top: rem(30); 
-          gap: rem(15);
+         display: flex;
+         align-items: center;
+         padding-top: rem(30); 
+         gap: rem(15);
       }
    }
    // .main__social-instagram
@@ -90,7 +93,7 @@
       gap: rem(14);
       flex-wrap: wrap;
       @media (max-width:$mobile){
-          display: block; 
+         display: block; 
       }
    }
    // .menu__item
