@@ -138,6 +138,9 @@
    padding-right: rem(70);
    @media (max-width:$tablet){
       padding-right: 0; 
+      flex: 0 0 115px;
+   }
+   @media (max-width:$mobile){
       flex: 0 0 100px;
    }
    // .cart-search__text
