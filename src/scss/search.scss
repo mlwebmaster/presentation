@@ -138,7 +138,7 @@
    padding-right: rem(70);
    @media (max-width:$tablet){
       padding-right: 0; 
-      flex: 0 0 130px;
+      flex: 0 0 100px;
    }
    // .cart-search__text
    &__text {
@@ -153,6 +153,8 @@
       margin-right: rem(10);
       @media (max-width:$mobile){
           color: $whiteColor; 
+          font-size: 16px;
+          font-weight: 400;
       }
    }
    // .cart-search__image
