@@ -7933,6 +7933,7 @@ button.swiper-pagination-bullet {
 
   .top-hidden {
     display: block;
+    padding-bottom: 1.25rem;
   }
 
   .main-top__lable {

@@ -32,7 +32,8 @@
    &-hidden {
       display: none;
       @media (max-width:$mobile){
-          display: block; 
+         display: block; 
+         padding-bottom: rem(20);
       }
    }
 }
