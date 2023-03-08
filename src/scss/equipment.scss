@@ -1,4 +1,4 @@
-/* EQUIPMENT */
+/* equipment */
 .equipment {
    border-bottom: 1px solid $borderColor;
    // .equipment__container
@@ -36,6 +36,17 @@
    // .equipment__menu
    &__menu {
       flex: 1 1 auto;
+   }
+   &-hidden {
+      display: none;
+      @media (max-width:$mobile){
+          display: block; 
+      }
+   }
+   &-visible {
+      @media (max-width:$mobile){
+         display: none; 
+     }
    }
 }
 .menu-equipment {

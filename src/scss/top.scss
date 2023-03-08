@@ -1,4 +1,4 @@
-/* TOP */
+/* top */
 .top {
    padding-bottom: rem(80);
    // .top_body
@@ -17,6 +17,23 @@
    }
    // .top__main
    &__main {
+   }
+   &__cards-title {
+      padding-bottom: rem(20);
+      @media (max-width:$mobileSmall){
+          text-align: center; 
+      }
+   }
+   &-visible {
+      @media (max-width:$mobile){
+          display: none; 
+      }
+   }
+   &-hidden {
+      display: none;
+      @media (max-width:$mobile){
+          display: block; 
+      }
    }
 }
 .main-top {
@@ -47,6 +64,11 @@
    }
    // .main-top__menu
    &__menu {
+   }
+   &-hidden {
+      @media (max-width:$mobile){
+          display: none; 
+      }
    }
 }
 .menu-main-top {
@@ -83,6 +105,9 @@
             text-decoration-color: $orangeColor;
          }
       }
+   }
+   &-hidden {
+
    }
 }
 .cards-top {
