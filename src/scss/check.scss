@@ -158,6 +158,9 @@
       align-items: center;
    }
    @media (max-width:$mobileSmall){
+       align-items: normal; 
+   }
+   @media (max-width:$mobileSmall){
       margin-bottom: rem(50);
    }
    // .billing-check__details
@@ -215,6 +218,10 @@
    // .form-details__name
    &__name {
       display: flex;
+      @media (max-width:$mobileSmall){
+         flex-direction: column;
+         gap: 10px;
+      }
    }
    // .form-details__item
    &__item {
@@ -300,6 +307,10 @@
 .item-first-details {
    width: rem(230);
    margin-right: rem(10);
+   @media (max-width:$mobileSmall){
+       width: 100%; 
+       margin-right: 0;
+   }
 }
 .input-first-details {
 }
