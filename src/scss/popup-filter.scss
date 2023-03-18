@@ -1,0 +1,183 @@
+/* popup-filter */
+.popup {
+   // .popup__wrapper
+   &__wrapper {
+   }
+   // .popup__content
+   &__content {
+   }
+   // .popup__text
+   &__text {
+   }
+   // .popup__close
+   &__close {
+   }
+}
+.popup-filter {
+   max-width: 350px;
+   margin: 0 auto;
+   // .popup-filter__side
+   &__side {
+   }
+   // .popup-filter__menu
+   &__menu {
+   }
+   // .popup-filter__price
+   &__price {
+   }
+   // .popup-filter__brand
+   &__brand {
+   }
+   // .popup-filter__country
+   &__country {
+   }
+}
+.menu-popup-filter {
+   padding-bottom: rem(16);
+   // .menu-popup-filter__title
+   &__title {
+   }
+   // .menu-popup-filter__body
+   &__body {
+   }
+   // .menu-popup-filter__spollers
+   &__spollers {
+   }
+}
+.menu-popup-filter-spollers {
+   display: grid;
+	gap: 5px;
+   // .menu-popup-filter-spollers__item
+   &__item {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.0075em;
+      color: $blackColor;
+   }
+   // .menu-popup-filter-spollers__title
+   &__title {
+   }
+   // .menu-popup-filter-spollers__body
+   &__body {
+   }
+}
+.submenu-popup-filter {
+   // .submenu-popup-filter__list
+   &__list {
+   }
+   // .submenu-popup-filter__item
+   &__item {
+   }
+   // .submenu-popup-filter__link
+   &__link {
+   }
+}
+.price-popup-filter {
+   // .price-popup-filter__spollers
+   &__spollers {
+   }
+   // .price-popup-filter__item
+   &__item {
+   }
+   // .price-popup-filter__title
+   &__title {
+   }
+   // .price-popup-filter__body
+   &__body {
+   }
+   // .price-popup-filter__inputs
+   &__inputs {
+   }
+   // .price-popup-filter__input
+   &__input {
+   }
+   // .price-popup-filter__slider
+   &__slider {
+   }
+}
+.spollers {
+   // .spollers__item
+   &__item {
+   }
+   // .spollers__body
+   &__body {
+   }
+}
+// ._spoller-active
+._spoller-active {
+}
+
+.brand-popup-filter {
+   // .brand-popup-filter__spollers
+   &__spollers {
+   }
+   // .brand-popup-filter__item
+   &__item {
+   }
+   // .brand-popup-filter__title
+   &__title {
+   }
+   // .brand-popup-filter__body
+   &__body {
+   }
+}
+.country-popup-filter {
+   // .country-popup-filter__spollers
+   &__spollers {
+   }
+   // .country-popup-filter__item
+   &__item {
+   }
+   // .country-popup-filter__title
+   &__title {
+   }
+   // .country-popup-filter__body
+   &__body {
+   }
+}
+// Заголовок спойлера
+.price-popup-filter__title,
+.brand-popup-filter__title,
+.country-popup-filter__title,
+.menu-popup-filter-spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			background-color: #000;
+			height: 1px;
+			width: 5px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+		&._spoller-active {
+			&::before {
+				transform: translateX(-75%) rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+	}
+   transition: color 0.3s ease 0s;
+   @media (any-hover: hover){
+      &:hover{
+         color: $orangeColor;
+      }
+   }
+}

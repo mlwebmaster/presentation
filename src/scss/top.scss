@@ -20,13 +20,10 @@
    }
    &__cards-title {
       padding-bottom: rem(20);
-      @media (max-width:$mobileSmall){
-          text-align: center; 
-      }
    }
    &-visible {
       @media (max-width:$mobile){
-          display: none; 
+          display: none;
       }
    }
    &-hidden {
@@ -113,7 +110,6 @@
 }
 .cards-top {
    display: flex;
-   justify-content: center;
    margin: 0 -17px;
    flex-wrap: wrap;
    // .cards-top__item
@@ -122,10 +118,20 @@
       display: flex;
       flex-direction: column;
       margin-bottom: rem(30);
+      @media (max-width: em(463.98)){
+         flex: 1 0 auto;
+      }
    }
    // .cards-top__image
    &__image {
       margin-bottom: rem(11);
+      @media (max-width: em(463.98)){
+         display: block;
+         img {
+            width: 100%;
+         }
+      }
+
    }
    // .cards-top__desc
    &__desc {

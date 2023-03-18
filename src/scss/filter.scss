@@ -1,0 +1,21 @@
+/* filter */
+.filter {
+   display: none;
+   @media (max-width:$mobile){
+       display: block; 
+   }
+   // .filter__container
+   &__container {
+      display: flex;
+      justify-content: center;
+      gap: rem(15);
+      padding: rem(15) 0;
+   }
+   // .filter__image
+   &__image {
+   }
+   // .filter__button
+   &__button {
+   }
+}
+

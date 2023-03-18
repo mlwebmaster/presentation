@@ -189,6 +189,7 @@ body {
 @import "lasers";
 
 // Підключення стилів окремих сторінок sub-sub-category.html
+@import "filter";
 @import "model";
 
 // Підключення стилів окремих сторінок product-card.html
@@ -246,3 +247,4 @@ body {
 
 // Підключення стилів окремих сторінок create.html
 @import "create";
+@import "popup-filter";

@@ -25,7 +25,7 @@
       flex: 0 0 253px;
       padding-right: rem(50);
       @media (max-width:$mobile){
-          display: none; 
+         display: none; 
       }
    }
    // .geodesy__menu
@@ -48,6 +48,9 @@
       flex: 1 1 auto;
       padding-left: rem(21);
       padding-right: rem(21);
+      @media (max-width: em(513)){
+          padding: 0; 
+      }
    }
    // .geodesy__equipment
    &__equipment {
@@ -282,8 +285,7 @@ input[type=number] {
    padding-bottom: rem(73);
    margin: 0 rem(-10);
    @media (max-width:$mobile){
-       justify-content: center;
-       margin: 0;
+      margin: 0;
    }
    // .equipment-geodesy__item
    &__item {
@@ -293,12 +295,18 @@ input[type=number] {
       flex-direction: column;
       padding: 0 rem(10);
       @media (max-width:$mobile){
-         flex: 0 1 auto; 
+         flex: 1 1 auto; 
+         max-width: 480px;
       }
    }
    // .equipment-geodesy__image
    &__image {
       margin-bottom: rem(19);
+      @media (max-width: em(480)){
+         img {
+            width: 100%;
+         } 
+      }
    }
    // .equipment-geodesy__title
    &__title {

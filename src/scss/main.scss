@@ -34,7 +34,12 @@
    }
    // .main__high-block
    &__high-block {
-      flex: 1 1 auto;
+      @media (max-width:$mobile){
+         flex: 1 1 auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+      }
    }
    // .main__social
    &__social {
@@ -85,6 +90,12 @@
             margin-bottom: rem(10);
          }
       }
+   }
+   &__link-articles {
+      font-size: 18px;
+      font-weight: 600;
+      color: $blueColor;
+      padding-left: rem(23);
    }
 }
 .menu {

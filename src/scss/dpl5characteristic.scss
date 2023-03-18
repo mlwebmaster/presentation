@@ -8,13 +8,14 @@
    &__body {
    }
    // .dpl5characteristic__header
-   &__header {
+   &__header-desc {
       display: flex;
       align-items: center;
       gap: rem(8);
       border-bottom: 4px solid $light2GrayColor;
       margin-bottom: rem(37);
       @media (max-width:$mobile){
+         flex-direction: row;
          justify-content: space-evenly;   
       }
    }
@@ -117,6 +118,7 @@
       gap: rem(10);
       padding: 0 rem(14);
       border-left: 1px solid $lineVertColor;
+      margin-bottom: rem(10);
       &:first-child {
          border: none;
       }

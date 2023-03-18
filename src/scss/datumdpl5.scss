@@ -40,7 +40,7 @@
          width: rem(40);
          height: rem(40);
          top: rem(205);
-         left: rem(25);
+         @include adaptiveValue("left", 25, 0);
          cursor: pointer;
       }
       &::after {
@@ -50,7 +50,7 @@
          width: rem(40);
          height: rem(40);
          top: rem(205);
-         right: rem(25);
+         @include adaptiveValue("right", 25, 0);
          cursor: pointer;
       }
    }

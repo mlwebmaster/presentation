@@ -78,6 +78,9 @@
    // .page__log-in
    &__log-in {
    }
+   // .page__filter
+   &__filter {
+   }
 }
 [class*="__breadcrumbs"] {
    font-family: 'Raleway';
@@ -86,6 +89,9 @@
       font-size: 14px;
       line-height: 114%;
       color: $lightLightGrayColor;
+      @media (max-width:$mobile){
+         margin-bottom: rem(10);
+      }
       span {
          font-family: 'Raleway';
          font-style: normal;
