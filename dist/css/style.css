@@ -7569,6 +7569,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 35em) {
+  .form-promotional {
+    width: 100%;
+  }
+
   .form-promotional__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7579,6 +7583,23 @@ button.swiper-pagination-bullet {
 
   .form-promotional__item {
     margin-right: 0;
+    width: 100%;
+  }
+
+  .form-promotional__button-wrapper {
+    width: 100%;
+  }
+
+  .form-promotional__button {
+    width: 100%;
+  }
+
+  .form-details__button {
+    width: 100%;
+  }
+
+  .form-deliver__button {
+    width: 100%;
   }
 }
 
@@ -8500,6 +8521,18 @@ button.swiper-pagination-bullet {
     gap: 15px;
   }
 
+  .order-totals__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .order-totals__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
   .form-order__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -8598,18 +8631,6 @@ button.swiper-pagination-bullet {
   .total__price {
     font-size: 14px;
   }
-
-  .order-totals__wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .order-totals__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-  }
 }
 
 @media (max-width: 32.0625em) {
@@ -8619,6 +8640,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 29.99875em) {
+  .form-search__item {
+    margin-right: 0;
+  }
+
   .form-search__button {
     display: none;
   }
@@ -8702,6 +8727,11 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .order__image img {
+    width: 100%;
   }
 
   .order__box-header {
@@ -8758,14 +8788,27 @@ button.swiper-pagination-bullet {
     font-size: 16px;
   }
 
+  .order-totals__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .form-order__wrapper {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+
   .form-order__button {
     padding: 0.9375rem 3.75rem;
+    width: 100%;
   }
 
   .item-order-card,
   .item-order-expiry,
   .item-order-cvv {
-    width: 18.75rem;
+    width: 100%;
   }
 }
 

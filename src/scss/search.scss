@@ -97,6 +97,9 @@
       @media (max-width:$tablet){
          flex: 0 1 520px;
       }
+      @media (max-width:$mobileSmall){
+         margin-right: 0;
+      }
    }
    // .form-search__input
    &__input {

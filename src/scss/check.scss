@@ -88,6 +88,9 @@
    }
 }
 .form-promotional {
+   @media (max-width: em(560)){
+      width: 100%;
+   }
    // .form-promotional__form
    &__form {
       display: flex;
@@ -108,7 +111,8 @@
       width: rem(300);
       margin-right: rem(10);
       @media (max-width: em(560)){
-         margin-right: 0; 
+         margin-right: 0;
+         width: 100%;
       }
    }
    // .form-promotional__input
@@ -126,6 +130,9 @@
    }
    // .form-promotional__button-wrapper
    &__button-wrapper {
+      @media (max-width: em(560)){
+         width: 100%;
+      }
    }
    // .form-promotional__button
    &__button {
@@ -142,6 +149,9 @@
       @include adaptiveValue("padding-bottom", 23, 15);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
+      @media (max-width: em(560)){
+         width: 100%;
+      }
       @media (any-hover: hover){
          &:hover{
             background: $blue2Color;
@@ -297,6 +307,9 @@
       @include adaptiveValue("padding-bottom", 23, 15);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
+      @media (max-width: em(560)){
+         width: 100%; 
+      }
       @media (any-hover: hover){
          &:hover{
             background: $blue2Color;
@@ -422,6 +435,9 @@
       @include adaptiveValue("padding-bottom", 23, 15);
       border-radius: 4px;
       transition: background 0.3s ease 0s;
+      @media (max-width: em(560)){
+         width: 100%; 
+      }
       @media (any-hover: hover){
          &:hover{
             background: $blue2Color;
