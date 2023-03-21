@@ -19,6 +19,7 @@
       display: flex;
       @media (max-width:$tablet){
          flex-direction: column;
+         align-items: center;
       }
    }
    // .contactus__content
@@ -28,6 +29,7 @@
       max-width: rem(540);
       @media (max-width:$tablet){
          padding-right: 0;
+         max-width: 100%;
       }
    }
    // .contactus__text
@@ -119,9 +121,7 @@
    &__social {
       @media (max-width:$tablet){
          @include adaptiveValue("margin-bottom", 60, 40);
-      }
-      @media (max-width:$mobile){
-         text-align: center; 
+         text-align: center;
       }
    }
    // .contactus__social-linkedin
@@ -156,12 +156,23 @@
 .form-contactus {
    margin: 0 auto;
    background: $blueColor;
-   padding: 36px 55px 20px 45px;
+   @include adaptiveValue("padding-top", 36, 25);
+   @include adaptiveValue("padding-right", 55, 25);
+   @include adaptiveValue("padding-bottom", 20, 15);
+   @include adaptiveValue("padding-left", 55, 25);
    color: $whiteColor;
-   @include adaptiveValue("width", 570, 290);
+   @include adaptiveValue("width", 570, 450);
+   @include adaptiveValue("width", 450, 290, 1, 480, 320);
+   @media (max-width:$tablet){
+      max-width: 570px;
+      display: flex;
+      margin: 0;
+      justify-content: center;
+   }
 
    // .form-contactus__body
    &__body {
+      width: 100%;
    }
    // .form-contactus__title
    &__title {

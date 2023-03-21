@@ -39,8 +39,9 @@
          background: url('@img/datumdpl5/arrow-prev-dpl5.svg');
          width: rem(40);
          height: rem(40);
-         top: rem(205);
-         @include adaptiveValue("left", 25, 0);
+         top: 50%;
+         transform: translate(0, -50%);
+         left: 0;
          cursor: pointer;
       }
       &::after {
@@ -49,8 +50,11 @@
          background: url('@img/datumdpl5/arrow-next-dpl5.svg');
          width: rem(40);
          height: rem(40);
-         top: rem(205);
-         @include adaptiveValue("right", 25, 0);
+         top: 50%;
+         right: 0;
+         top: 50%;
+         transform: translate(0, -50%);
+         right: 0;
          cursor: pointer;
       }
    }
@@ -188,6 +192,7 @@
    }
    // .content-datumdpl5__buy-button-wrapper
    &__buy-button-wrapper {
+      margin-bottom: rem(20);
    }
    // .content-datumdpl5__buy-button-image
    &__buy-button-image {
@@ -206,11 +211,8 @@
       display: flex;
       gap:rem(11);
       @media (max-width:$mobile){
-          margin-bottom: rem(20); 
-      }
-      @media (max-width:$mobileSmall){
-          width: 100%;
-          justify-content: center; 
+         width: 100%;
+         justify-content: center; 
       }
    }
    // .content-datumdpl5__bank-card

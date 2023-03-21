@@ -21,23 +21,14 @@
    &__cards-title {
       padding-bottom: rem(20);
    }
-   &-visible {
-      @media (max-width:$mobile){
-          display: none;
-      }
-   }
-   &-hidden {
-      display: none;
-      @media (max-width:$mobile){
-         display: block; 
-         padding-bottom: rem(20);
-      }
-   }
 }
 .main-top {
    display: flex;
    align-items: center;
    margin-bottom: rem(36);
+   @media (max-width:$mobile){
+      display: block; 
+   }
    // .main-top__lable
    &__lable {
       flex: 1 0 auto;
@@ -45,7 +36,8 @@
       padding: rem(17) rem(40);
       background: $orangeColor;
       @media (max-width:$mobile){
-          justify-content: center; 
+         justify-content: center; 
+         margin-bottom: rem(20);
       }
    }
    // .main-top__lable-icon
@@ -70,9 +62,9 @@
    }
 }
 .menu-main-top {
-   @media (max-width:$mobile){
-       display: none; 
-   }
+   overflow: auto;
+   padding-bottom: rem(20);
+   margin-left: rem(20);
    // .menu-main-top__body
    &__body {
    }
@@ -80,7 +72,7 @@
    &__list {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
+      white-space: nowrap;
    }
    // .menu-main-top__item
    &__item {

@@ -34,6 +34,7 @@
    }
    // .main__high-block
    &__high-block {
+      display: none;
       @media (max-width:$mobile){
          flex: 1 1 auto;
          display: flex;

@@ -112,10 +112,6 @@
    // .article__side
    &__side {
       flex: 0 0 rem(200);
-      padding: 0 rem(44);
-      @media (max-width:$tablet){
-         padding: 0 rem(15);
-      }
    }
    // .article__cards
    &__cards {

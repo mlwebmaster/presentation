@@ -216,22 +216,15 @@ input._form-focus {
       }
    }
 }
+.menu-geodesy-spollers__title._spoller-active {
+   color: $orangeColor;
+}
 // Контент спойлера
 .menu-geodesy-spollers__body {
 }
 .menu-hidden {
    @media (min-width:$mobile){
        display: none; 
-   }
-}
-.chooseus-hidden {
-   @media (min-width:$mobile){
-      display: none; 
-  }
-}
-.chooseus-visible {
-   @media (max-width:$mobile){
-      display: none;
    }
 }
 .basket-hidden {

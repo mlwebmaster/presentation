@@ -2,13 +2,16 @@
 .chooseus {
    padding-bottom: rem(80);
    @media (max-width:$mobile){
-       padding-bottom: rem(10); 
+       padding-bottom: rem(40); 
    }
    // .chooseus__container
    &__container {
    }
    // .chooseus__body
    &__body {
+      @media (max-width:$mobile){
+         @include adaptiveValue("padding-top", 40, 20); 
+      }
    }
    // .chooseus__title
    &__title {

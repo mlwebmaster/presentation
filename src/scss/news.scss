@@ -1,9 +1,6 @@
 /* NEWS */
 .news {
-   padding-bottom: rem(80);
-   @media (max-width:$mobile){
-      padding-bottom: 0;
-   }
+   @include adaptiveValue("padding-bottom", 80, 40);
    // .news__container
    &__container {
    }
@@ -58,10 +55,10 @@
    }
    // .news__button
    &__button {
-      margin-left: rem(340);
       display: flex;
       align-items: center;
-      gap: rem(7)
+      gap: rem(7);
+      margin: 0 auto;
    }
    // .news__button-text
    &__button-text {

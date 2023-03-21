@@ -23,9 +23,6 @@
    // .check__contacts
    &__contacts {
    }
-   // .check__promotional
-   &__promotional {
-   }
    // .check__billing
    &__billing {
    }
@@ -39,6 +36,9 @@
    @media (max-width: $mobile){
       flex-direction: column; 
       gap: rem(5);
+   }
+   @media (max-width:$mobileSmall){
+      align-items: flex-start; 
    }
    // .contacts-check__phone
    &__phone,
@@ -61,100 +61,6 @@
             &:hover{
                color: $orangeColor;
             }
-         }
-      }
-   }
-}
-.promotional-check {
-   padding-top: rem(25);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding-bottom: rem(25);
-   border-bottom: 1px solid $borderColor;
-   @media (max-width:$mobile){
-      flex-direction: column;
-      border-bottom: none; 
-   }
-   // .promotional-check__title
-   &__title {
-      @media (max-width:$mobile){
-         border-bottom: 1px solid $borderColor;
-         padding-bottom: rem(10);
-      }
-   }
-   // .promotional-check__form
-   &__form {
-   }
-}
-.form-promotional {
-   @media (max-width: em(560)){
-      width: 100%;
-   }
-   // .form-promotional__form
-   &__form {
-      display: flex;
-      align-items: center;
-      @media (max-width: em(560)){
-         flex-direction: column;
-         gap: rem(15); 
-      }
-   }
-   // .form-promotional__item
-   &__item {
-      border: 1px solid $borderFormColor;
-      border-radius: 4px;
-      padding-left: rem(22);
-      padding-right: rem(22);
-      @include adaptiveValue("padding-top", 22, 15);
-      @include adaptiveValue("padding-bottom", 22, 15);
-      width: rem(300);
-      margin-right: rem(10);
-      @media (max-width: em(560)){
-         margin-right: 0;
-         width: 100%;
-      }
-   }
-   // .form-promotional__input
-   &__input {
-      width: 100%;
-      background: $bgColor;
-      outline: none;
-      &::placeholder {
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 125%;
-         color: $blackColor;
-      }
-   }
-   // .form-promotional__button-wrapper
-   &__button-wrapper {
-      @media (max-width: em(560)){
-         width: 100%;
-      }
-   }
-   // .form-promotional__button
-   &__button {
-      white-space: nowrap;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 125%;
-      text-transform: uppercase;
-      color: $whiteColor;
-      background: $blueColor;
-      padding-left: rem(47);
-      padding-right: rem(47);
-      @include adaptiveValue("padding-top", 23, 15);
-      @include adaptiveValue("padding-bottom", 23, 15);
-      border-radius: 4px;
-      transition: background 0.3s ease 0s;
-      @media (max-width: em(560)){
-         width: 100%;
-      }
-      @media (any-hover: hover){
-         &:hover{
-            background: $blue2Color;
          }
       }
    }
@@ -197,6 +103,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width:$mobileSmall){
+         display: block; 
+      }
    }
    // .details-billing__title
    &__title {

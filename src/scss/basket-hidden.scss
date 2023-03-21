@@ -153,6 +153,9 @@
 }
 .block-calculate-bm {
    max-width: rem(320);
+   @media (max-width:$mobile){
+      max-width: rem(292);
+   }
    // .block-calculate-bm__title
    &__title {
       border-bottom: 1px solid $borderColor;
@@ -225,10 +228,13 @@
       text-transform:uppercase;
       color: $whiteColor;
       background: $blueColor;
-      width: rem(280);
+      width: rem(292);
       padding: rem(15) 0;
       border-radius: 4px;
       margin: rem(15) 0;
+      @media (max-width:$mobile){
+         text-align: center;
+      }
    }
 }
 .inner-min-bm {
