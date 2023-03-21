@@ -3239,6 +3239,44 @@ input[type=number] {
   color: #909090;
 }
 
+.calibration__form-wrapper {
+  max-width: 510px;
+  margin: 0 auto;
+  background-color: #FF640D;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+.calibration__input {
+  display: block;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.calibration__input._form-focus {
+  background-color: #F2F2F2;
+}
+
+.calibration__button {
+  display: block;
+  color: #ffffff;
+  background-color: #31155B;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.calibration__double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
 /* CONTACTUS */
 
 .contactus__container {
@@ -7488,6 +7526,10 @@ button.swiper-pagination-bullet {
   .equipment-geodesy__image img {
     width: 100%;
   }
+
+  .calibration__double {
+    display: block;
+  }
 }
 
 @media (max-width: 20em) {
@@ -8705,6 +8747,10 @@ button.swiper-pagination-bullet {
   .menu-about__list {
     display: inline-block;
   }
+
+  .calibration__button {
+    width: 100%;
+  }
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
@@ -9538,6 +9584,10 @@ button.swiper-pagination-bullet {
   .calibration__price-button:hover {
     color: #FF640D;
     border: 2px solid #FF640D;
+  }
+
+  .calibration__button:hover {
+    background-color: #5B3E85;
   }
 
   .form-contactus__button:hover {

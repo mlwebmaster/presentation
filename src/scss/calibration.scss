@@ -198,3 +198,57 @@
    }
 }
 
+// test
+.calibration {
+   // .calibration__form-wrapper
+   &__form-wrapper {
+      max-width: 510px;
+      margin: 0 auto;
+      background-color: $orangeColor;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: rem(80);
+   }
+   // .calibration__form
+   &__form {
+   }
+   // .calibration__input
+   &__input {
+      display: block;
+      margin-bottom: rem(20);
+      padding: rem(20);
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+      &._form-focus {
+         background-color: $blockBgColor;
+      }
+   }
+   // .calibration__button 
+   &__button {
+      display: block;
+      color: $whiteColor;
+      background-color: $blueColor;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0 auto;
+      @media (any-hover: hover){
+         &:hover{
+            background-color: $blue2Color;
+         }
+      }
+      @media (max-width: em(360)){
+           width: 100%;
+      }
+   }
+   // .calibration__double 
+   &__double {
+      display: flex;
+      gap: 20px;
+      @media (max-width: em(480)){
+         display: block;  
+      }
+   }
+}
+._input-double {
+}
