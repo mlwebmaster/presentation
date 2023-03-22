@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="preload" href="css/style.min.css?_v=20230322060339" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/style.min.css?_v=20230322062055" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="SMITH SURVEYING EQUIPMENT Equipped to meet your goals" />
@@ -19,7 +19,7 @@
 			<div class="header__top">promotional discounts up to 70%</div>
 			<div class="header__container">
 				<div class="header__body">
-					<button type="button" class="menu__icon icon-menu" name="Menuburger"><span></span></button>
+					<button id="menuburger" type="button" class="menu__icon icon-menu" aria-label="menuburger"><span></span></button>
 					<a href="index.html" class="header__logo">
 						<img src="img/header/logo.svg" alt="Logo" width="35" height="36">
 					</a>
@@ -128,8 +128,8 @@
 								</div>
 							</div>
 							<!-- Если нужна навигация (влево/вправо) -->
-							<button type="button" class="swiper-button-prev" name="arrowprev"></button>
-							<button type="button" class="swiper-button-next" name="arrownext"></button>
+							<button id="arrowprev" type="button" class="swiper-button-prev" aria-label="arrowprev"></button>
+							<button id="arrownext" type="button" class="swiper-button-next" aria-label="arrownext"></button>
 						</div>
 					</div>
 				</div>
@@ -512,7 +512,7 @@
 
 
 	</div>
-	<script defer src="js/app.min.js?_v=20230322060339"></script>
+	<script defer src="js/app.min.js?_v=20230322062055"></script>
 </body>
 
 </html>
