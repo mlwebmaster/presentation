@@ -4124,6 +4124,7 @@ input[name=newpas] {
 
 .cards-articles__image img {
   width: 100%;
+  height: 100%;
 }
 
 .cards-articles__desc {
@@ -4325,6 +4326,11 @@ input[name=newpas] {
 
 .cards-article__image {
   margin-bottom: 0.6875rem;
+}
+
+.cards-article__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .cards-article__desc {
@@ -7895,15 +7901,8 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-
-  .cards-article__title {
-    display: none;
   }
 
   .label-basket__price {
@@ -8761,12 +8760,18 @@ button.swiper-pagination-bullet {
             flex: 1 0 auto;
   }
 
-  .cards-top__image {
-    display: block;
-  }
-
   .cards-top__image img {
     width: 100%;
+    height: 100%;
+  }
+
+  .cards-recent__item {
+    width: 100%;
+  }
+
+  .cards-recent__image img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -8783,6 +8788,12 @@ button.swiper-pagination-bullet {
 
   .cards-articles__item {
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 28.12375em) {
+  .cards-article__item {
+    width: 100%;
   }
 }
 
