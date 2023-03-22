@@ -1244,6 +1244,7 @@ input._form-focus::placeholder {
 }
 
 .equipment__image {
+  display: block;
   margin-right: 1.5625rem;
 }
 
@@ -8580,6 +8581,12 @@ button.swiper-pagination-bullet {
 
   .equipment__item img {
     width: 100%;
+    height: 100%;
+  }
+
+  .equipment__image {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
   }
 
   .navigation-footer__shop {
