@@ -65,6 +65,9 @@
    overflow: auto;
    padding-bottom: rem(20);
    margin-left: rem(20);
+   @media (max-width:$mobile){
+      margin-left: 0;
+   }
    // .menu-main-top__body
    &__body {
    }
@@ -75,8 +78,10 @@
       white-space: nowrap;
    }
    // .menu-main-top__item
-   &__item {
-      margin-left: rem(35);
+   &__item {      
+      &:not(:first-child) {
+         margin-left: rem(35);
+      }
    }
    // .menu-main-top__link
    &__link {
