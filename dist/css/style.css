@@ -1356,6 +1356,9 @@ input._form-focus::placeholder {
   display: flex;
   padding: 1.0625rem 2.5rem;
   background: #FF640D;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-top__lable-icon {
