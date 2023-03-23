@@ -32,9 +32,12 @@
    }
    // .news__image
    &__image {
+      flex: 1 0 300px;
       margin-right: rem(40);
+      width: 300px;
       img {
-         max-width: 100%;
+         width: 100%;
+         height: 100%;
       }
       @media (max-width:$mobile){
          margin-right: 0;
