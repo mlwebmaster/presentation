@@ -2517,19 +2517,25 @@ input[type=number] {
   display: flex;
   padding-top: 2.5rem;
   margin-bottom: 5rem;
+  gap: 2.5rem;
+}
+
+.datumdpl5__block-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 450px;
+          flex: 1 0 450px;
 }
 
 .datumdpl5__image {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
   position: relative;
   margin-right: 2.5625rem;
   margin-bottom: 1.25rem;
 }
 
 .datumdpl5__image img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 .datumdpl5__image::before {
@@ -2569,14 +2575,16 @@ input[type=number] {
   gap: 0.625rem;
 }
 
-.datumdpl5__image-mini-1 img {
-  width: 50px;
+.datumdpl5__image-mini-1,
+.datumdpl5__image-mini-2,
+.datumdpl5__image-mini-3 {
+  width: 100px;
 }
 
 .datumdpl5__image-mini-1 img,
 .datumdpl5__image-mini-2 img,
 .datumdpl5__image-mini-3 img {
-  width: 50px;
+  width: 100%;
 }
 
 .datumdpl5__text {
