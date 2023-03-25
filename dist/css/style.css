@@ -3026,7 +3026,6 @@ input[type=number] {
 
 .news__image img {
   width: 100%;
-  height: 100%;
 }
 
 .news__date {
@@ -8428,6 +8427,9 @@ button.swiper-pagination-bullet {
   .news__image {
     margin-right: 0;
     margin-bottom: 2.5rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 
   .article__social-item {
