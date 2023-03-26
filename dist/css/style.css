@@ -8685,6 +8685,7 @@ button.swiper-pagination-bullet {
 
   .order__image img {
     width: 100%;
+    height: 100%;
   }
 
   .order__box-header {
