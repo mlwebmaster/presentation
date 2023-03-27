@@ -28,6 +28,10 @@
          display: none; 
       }
    }
+   // .geodesy__apply
+   &__apply {
+      padding-top: rem(15);
+   }
    // .geodesy__menu
    &__menu {
    }
@@ -355,6 +359,19 @@ input[type=number] {
    }
 }
 
-
+.apply__button {
+   display: block;
+   margin: 0 auto;
+   background-color: $orangeColor;
+   color: $whiteColor;
+   padding: rem(5) rem(12);
+   border-radius: 4px;
+   font-size: 14px;
+   @media (any-hover: hover){
+      &:hover{
+         background-color: $hoverOrangeColor;
+      }
+   }
+}
 
 

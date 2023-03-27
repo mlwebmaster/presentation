@@ -2049,6 +2049,10 @@ input._form-focus::placeholder {
   padding-right: 3.125rem;
 }
 
+.geodesy__apply {
+  padding-top: 0.9375rem;
+}
+
 .geodesy__content {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -2289,6 +2293,16 @@ input[type=number] {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
+}
+
+.apply__button {
+  display: block;
+  margin: 0 auto;
+  background-color: #FF640D;
+  color: #ffffff;
+  padding: 0.3125rem 0.75rem;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 /* CHOOSEUS */
@@ -9654,6 +9668,10 @@ button.swiper-pagination-bullet {
 
   .menu-equipment-geodesy__link:hover {
     color: #FF640D;
+  }
+
+  .apply__button:hover {
+    background-color: #b74909;
   }
 
   .menu-about__link:hover {
