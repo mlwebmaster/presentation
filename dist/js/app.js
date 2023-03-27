@@ -627,7 +627,7 @@
         }
         function FLS(message) {
             setTimeout((() => {
-                if (window.FLS) console.log(message);
+                if (window.FLS) ;
             }), 0);
         }
         function uniqArray(array) {
@@ -744,7 +744,6 @@
                 this.options.init ? this.initPopups() : null;
             }
             initPopups() {
-                this.popupLogging(`Прокинувся`);
                 this.eventsPopup();
             }
             eventsPopup() {
@@ -760,8 +759,7 @@
                             this._selectorOpen = true;
                             this.open();
                             return;
-                        } else this.popupLogging(`Йой, не заповнено атрибут у ${buttonOpen.classList}`);
-                        return;
+                        }
                     }
                     const buttonClose = e.target.closest(`[${this.options.attributeCloseButton}]`);
                     if (buttonClose || !e.target.closest(`.${this.options.classes.popupContent}`) && this.isOpen) {
@@ -2128,10 +2126,7 @@
                 this._this = this;
                 if (this.config.init) {
                     const selectItems = data ? document.querySelectorAll(data) : document.querySelectorAll("select");
-                    if (selectItems.length) {
-                        this.selectsInit(selectItems);
-                        this.setLogging(`Прокинувся, построїв селектов: (${selectItems.length})`);
-                    } else this.setLogging("Сплю, немає жодного select");
+                    if (selectItems.length) this.selectsInit(selectItems);
                 }
             }
             getSelectClass(className) {
